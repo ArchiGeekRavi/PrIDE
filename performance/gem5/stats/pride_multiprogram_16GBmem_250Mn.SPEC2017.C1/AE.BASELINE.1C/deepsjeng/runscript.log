@@ -1,0 +1,57 @@
+Command line:
+./runscript_pride.sh deepsjeng AE.BASELINE.1C 1 2017
+Global frequency set at 1000000000000 ticks per second
+DRAM config: RowsPerBank: 65536, BanksPerRank: 32, RanksPerChannel: 1
+warn: Sockets disabled, not accepting gdb connections
+warn: CoherentXBar system.cpu.mmucache.mmubus has no snooping ports attached!
+warn: Checkpoints for file descriptors currently do not work.
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 20.1.0.5
+gem5 compiled Jul 12 2024 12:42:38
+gem5 started Jul 17 2024 12:51:59
+gem5 executing on a07dda8b130c, pid 86626
+command line: /home/user/PrIDE/performance/gem5/build/X86/gem5.opt --outdir=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/deepsjeng /home/user/PrIDE/performance/gem5/configs/example/se_rq_spec_config_multicore.py --redirects /lib64=/home/utils/gcc-6.2.0/lib64 --benchmark=deepsjeng --benchmark_stdout=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/deepsjeng/deepsjeng.out --benchmark_stderr=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/deepsjeng/deepsjeng.err --spec-version=2017 --num-cpus=1 --mem-size=16GB --mem-type=DDR5_2400_32x4 --mem-ranks=1 --checkpoint-dir=/home/user/PrIDE/performance/gem5/cpts/multiprogram_16GBmem_25Bn.SPEC2017.C1/deepsjeng-1-ref-x86 --checkpoint-restore=25000000000 --at-instruction --cpu-type DerivO3CPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l1d_assoc=8 --l1i_assoc=8 --l2_assoc=16 --maxinsts=250000000 --prog-interval=300Hz
+
+info: Standard input is not a terminal, disabling listeners.
+Benchmark- 0   deepsjeng
+Selected benchmark
+--> deepsjeng
+CMD: ['/opt/spec2017/benchspec/CPU/531.deepsjeng_r/run/run_base_refrate_gem5_se-m64.0000/deepsjeng_r_base.gem5_se-m64', '/opt/spec2017/benchspec/CPU/531.deepsjeng_r/run/run_base_refrate_gem5_se-m64.0000/ref.txt']
+CWD: /opt/spec2017/benchspec/CPU/531.deepsjeng_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/deepsjeng/deepsjeng.out_0
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/deepsjeng/deepsjeng.err_0
+Workload-0: 
+['/opt/spec2017/benchspec/CPU/531.deepsjeng_r/run/run_base_refrate_gem5_se-m64.0000/deepsjeng_r_base.gem5_se-m64', '/opt/spec2017/benchspec/CPU/531.deepsjeng_r/run/run_base_refrate_gem5_se-m64.0000/ref.txt']
+defense_enable:  False  detector:  MG  mitigation:  RRS  threshold:  800
+mg_entries:  1700
+rrs_tuples:  3400 rrs_swap_delay:  2740ns rit_acc_delay:  1.25ns
+Switch at curTick count:10000
+warn: membus.master is deprecated. `master` is now called `mem_side_ports`
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+info: Entering event queue @ 16546382633421.  Starting simulation...
+warn: PowerState: Already in the requested power state, request ignored
+Switched CPUS @ tick 16546382643421
+switching cpus
+**** REAL SIMULATION ****
+info: Entering event queue @ 16546382643421.  Starting simulation...
+16549715966754: Event_93: system.switch_cpus progress event, total committed:22348421, progress insts committed: 22348421, IPC: 02.23261
+16553049300087: Event_93: system.switch_cpus progress event, total committed:44935509, progress insts committed: 22587088, IPC: 02.25645
+16556382633420: Event_93: system.switch_cpus progress event, total committed:67302646, progress insts committed: 22367137, IPC: 02.23448
+16559715966753: Event_93: system.switch_cpus progress event, total committed:89774147, progress insts committed: 22471501, IPC: 002.2449
+16563049300086: Event_93: system.switch_cpus progress event, total committed:111500523, progress insts committed: 21726376, IPC: 02.17046
+16566382633419: Event_93: system.switch_cpus progress event, total committed:132971523, progress insts committed: 21471000, IPC: 02.14495
+16569715966752: Event_93: system.switch_cpus progress event, total committed:154842323, progress insts committed: 21870800, IPC: 02.18489
+16573049300085: Event_93: system.switch_cpus progress event, total committed:176820962, progress insts committed: 21978639, IPC: 02.19567
+16576382633418: Event_93: system.switch_cpus progress event, total committed:198527115, progress insts committed: 21706153, IPC: 02.16844
+16579715966751: Event_93: system.switch_cpus progress event, total committed:220697430, progress insts committed: 22170315, IPC: 02.21481
+16583049300084: Event_93: system.switch_cpus progress event, total committed:242856739, progress insts committed: 22159309, IPC: 02.21371
+16586382633417: Event_93: system.switch_cpus progress event, total committed:265105550, progress insts committed: 22248811, IPC: 02.22266
+16589715966750: Event_93: system.switch_cpus progress event, total committed:287253961, progress insts committed: 22148411, IPC: 02.21263
+16593049300083: Event_93: system.switch_cpus progress event, total committed:310300780, progress insts committed: 23046819, IPC: 02.30238
+16596382633416: Event_93: system.switch_cpus progress event, total committed:333047102, progress insts committed: 22746322, IPC: 02.27236
+16599715966749: Event_93: system.switch_cpus progress event, total committed:355110384, progress insts committed: 22063282, IPC: 02.20412
+16603049300082: Event_93: system.switch_cpus progress event, total committed:376937725, progress insts committed: 21827341, IPC: 02.18055
+16606382633415: Event_93: system.switch_cpus progress event, total committed:399098989, progress insts committed: 22161264, IPC: 02.21391
+Exiting @ tick 16607143760139 because a thread reached the max instruction count

@@ -116,3 +116,10 @@ cd security                                        # Change into the `security` 
 * **Note on Simulation Crashes:** One reason could be an issue with the benchmarks. A limited number of processor cores or limited DRAM can also be incapable of running 22 Gem5 processes in parallel causing crashes.
   * To check the benchmarks, one can try to run the benchmarks natively (without Gem5).
   * If amount of cores or DRAM is the limitation, one can decrease the `MAX_GEM5_PARALLEL_RUNS`. This will however linearly increase the simulation time.
+
+
+#### @Ravi Notes:
+
+* **Checkpoint Folder:** The checkpoint folder can be accessed at the following URL:
+  * [Checkpoint Folder (cpts)](https://iitbacin-my.sharepoint.com/:f:/g/personal/ravichoubey_iitb_ac_in/EjkQu5ZR_BNNhq2vtJ02YWAB7KQ2kDp7otR3tnJxNfreVA?e=2FrbXb)
+

@@ -1,0 +1,43 @@
+Command line:
+./runscript_pride.sh bwaves AE.BASELINE.1C 1 2017
+Global frequency set at 1000000000000 ticks per second
+DRAM config: RowsPerBank: 65536, BanksPerRank: 32, RanksPerChannel: 1
+warn: Sockets disabled, not accepting gdb connections
+warn: CoherentXBar system.cpu.mmucache.mmubus has no snooping ports attached!
+warn: Checkpoints for file descriptors currently do not work.
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 20.1.0.5
+gem5 compiled Jul 12 2024 12:42:38
+gem5 started Jul 17 2024 12:51:59
+gem5 executing on a07dda8b130c, pid 86570
+command line: /home/user/PrIDE/performance/gem5/build/X86/gem5.opt --outdir=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/bwaves /home/user/PrIDE/performance/gem5/configs/example/se_rq_spec_config_multicore.py --redirects /lib64=/home/utils/gcc-6.2.0/lib64 --benchmark=bwaves --benchmark_stdout=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/bwaves/bwaves.out --benchmark_stderr=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/bwaves/bwaves.err --spec-version=2017 --num-cpus=1 --mem-size=16GB --mem-type=DDR5_2400_32x4 --mem-ranks=1 --checkpoint-dir=/home/user/PrIDE/performance/gem5/cpts/multiprogram_16GBmem_25Bn.SPEC2017.C1/bwaves-1-ref-x86 --checkpoint-restore=25000000000 --at-instruction --cpu-type DerivO3CPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l1d_assoc=8 --l1i_assoc=8 --l2_assoc=16 --maxinsts=250000000 --prog-interval=300Hz
+
+info: Standard input is not a terminal, disabling listeners.
+Benchmark- 0   bwaves
+Selected benchmark
+--> bwaves
+CMD: ['/opt/spec2017/benchspec/CPU/503.bwaves_r/run/run_base_refrate_gem5_se-m64.0000/bwaves_r_base.gem5_se-m64', '/opt/spec2017/benchspec/CPU/503.bwaves_r/run/run_base_refrate_gem5_se-m64.0000/bwaves_1']
+CWD: /opt/spec2017/benchspec/CPU/503.bwaves_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/bwaves/bwaves.out_0
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/bwaves/bwaves.err_0
+Workload-0: 
+['/opt/spec2017/benchspec/CPU/503.bwaves_r/run/run_base_refrate_gem5_se-m64.0000/bwaves_r_base.gem5_se-m64', '/opt/spec2017/benchspec/CPU/503.bwaves_r/run/run_base_refrate_gem5_se-m64.0000/bwaves_1']
+defense_enable:  False  detector:  MG  mitigation:  RRS  threshold:  800
+mg_entries:  1700
+rrs_tuples:  3400 rrs_swap_delay:  2740ns rit_acc_delay:  1.25ns
+Switch at curTick count:10000
+warn: membus.master is deprecated. `master` is now called `mem_side_ports`
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+info: Entering event queue @ 17475504708294.  Starting simulation...
+warn: PowerState: Already in the requested power state, request ignored
+Switched CPUS @ tick 17475504718294
+switching cpus
+**** REAL SIMULATION ****
+info: Entering event queue @ 17475504718294.  Starting simulation...
+17478838041627: Event_93: system.switch_cpus progress event, total committed:8689274, progress insts committed: 8689274, IPC: 0.868058
+17482171374960: Event_93: system.switch_cpus progress event, total committed:18052218, progress insts committed: 9362944, IPC: 0.935358
+17485504708293: Event_93: system.switch_cpus progress event, total committed:27370005, progress insts committed: 9317787, IPC: 0.930847
+fatal: Unable to find destination for [0x8000000000000082:0x8000000000000086] on system.membus
+Memory Usage: 17110568 KBytes
