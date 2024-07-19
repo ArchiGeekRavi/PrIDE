@@ -1,0 +1,180 @@
+Command line:
+./runscript_pride.sh roms AE.BASELINE.4C 4 2017
+Global frequency set at 1000000000000 ticks per second
+DRAM config: RowsPerBank: 65536, BanksPerRank: 32, RanksPerChannel: 1
+warn: Sockets disabled, not accepting gdb connections
+warn: CoherentXBar system.cpu0.mmucache.mmubus has no snooping ports attached!
+warn: CoherentXBar system.cpu1.mmucache.mmubus has no snooping ports attached!
+warn: CoherentXBar system.cpu2.mmucache.mmubus has no snooping ports attached!
+warn: CoherentXBar system.cpu3.mmucache.mmubus has no snooping ports attached!
+warn: Checkpoints for file descriptors currently do not work.
+warn: Checkpoints for file descriptors currently do not work.
+warn: Checkpoints for file descriptors currently do not work.
+warn: Checkpoints for file descriptors currently do not work.
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 20.1.0.5
+gem5 compiled Jul 12 2024 12:42:38
+gem5 started Jul 17 2024 12:52:00
+gem5 executing on a07dda8b130c, pid 86844
+command line: /home/user/PrIDE/performance/gem5/build/X86/gem5.opt --outdir=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/roms /home/user/PrIDE/performance/gem5/configs/example/se_rq_spec_config_multicore.py --redirects /lib64=/home/utils/gcc-6.2.0/lib64 --benchmark=roms --benchmark_stdout=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/roms/roms.out --benchmark_stderr=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/roms/roms.err --spec-version=2017 --num-cpus=4 --mem-size=16GB --mem-type=DDR5_2400_32x4 --mem-ranks=1 --checkpoint-dir=/home/user/PrIDE/performance/gem5/cpts/multiprogram_16GBmem_25Bn.SPEC2017.C4/roms-1-ref-x86 --checkpoint-restore=25000000000 --at-instruction --cpu-type DerivO3CPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l1d_assoc=8 --l1i_assoc=8 --l2_assoc=16 --maxinsts=250000000 --prog-interval=300Hz
+
+info: Standard input is not a terminal, disabling listeners.
+Benchmark- 0   roms
+Selected benchmark
+--> roms
+CMD: ['/opt/spec2017/benchspec/CPU/554.roms_r/run/run_base_refrate_gem5_se-m64.0000/roms_r_base.gem5_se-m64']
+CWD: /opt/spec2017/benchspec/CPU/554.roms_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/roms/roms.out_0
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/roms/roms.err_0
+Benchmark- 1   roms
+Selected benchmark
+--> roms
+CMD: ['/opt/spec2017/benchspec/CPU/554.roms_r/run/run_base_refrate_gem5_se-m64.0000/roms_r_base.gem5_se-m64']
+CWD: /opt/spec2017/benchspec/CPU/554.roms_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/roms/roms.out_1
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/roms/roms.err_1
+Benchmark- 2   roms
+Selected benchmark
+--> roms
+CMD: ['/opt/spec2017/benchspec/CPU/554.roms_r/run/run_base_refrate_gem5_se-m64.0000/roms_r_base.gem5_se-m64']
+CWD: /opt/spec2017/benchspec/CPU/554.roms_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/roms/roms.out_2
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/roms/roms.err_2
+Benchmark- 3   roms
+Selected benchmark
+--> roms
+CMD: ['/opt/spec2017/benchspec/CPU/554.roms_r/run/run_base_refrate_gem5_se-m64.0000/roms_r_base.gem5_se-m64']
+CWD: /opt/spec2017/benchspec/CPU/554.roms_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/roms/roms.out_3
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/roms/roms.err_3
+Workload-0: 
+['/opt/spec2017/benchspec/CPU/554.roms_r/run/run_base_refrate_gem5_se-m64.0000/roms_r_base.gem5_se-m64']
+Workload-1: 
+['/opt/spec2017/benchspec/CPU/554.roms_r/run/run_base_refrate_gem5_se-m64.0000/roms_r_base.gem5_se-m64']
+Workload-2: 
+['/opt/spec2017/benchspec/CPU/554.roms_r/run/run_base_refrate_gem5_se-m64.0000/roms_r_base.gem5_se-m64']
+Workload-3: 
+['/opt/spec2017/benchspec/CPU/554.roms_r/run/run_base_refrate_gem5_se-m64.0000/roms_r_base.gem5_se-m64']
+defense_enable:  False  detector:  MG  mitigation:  RRS  threshold:  800
+mg_entries:  1700
+rrs_tuples:  3400 rrs_swap_delay:  2740ns rit_acc_delay:  1.25ns
+Switch at curTick count:10000
+warn: membus.master is deprecated. `master` is now called `mem_side_ports`
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+info: Entering event queue @ 15651257077332.  Starting simulation...
+warn: PowerState: Already in the requested power state, request ignored
+Switched CPUS @ tick 15651257087332
+switching cpus
+**** REAL SIMULATION ****
+info: Entering event queue @ 15651257087332.  Starting simulation...
+15654590410665: Event_285: system.switch_cpus3 progress event, total committed:7415226, progress insts committed: 7415226, IPC: 0.740781
+15654590410665: Event_284: system.switch_cpus2 progress event, total committed:7414674, progress insts committed: 7414674, IPC: 0.740726
+15654590410665: Event_283: system.switch_cpus1 progress event, total committed:7407281, progress insts committed: 7407281, IPC: 0.739987
+15654590410665: Event_282: system.switch_cpus0 progress event, total committed:7407914, progress insts committed: 7407914, IPC: 0.740051
+15657923743998: Event_282: system.switch_cpus0 progress event, total committed:14856213, progress insts committed: 7448299, IPC: 0.744085
+15657923743998: Event_283: system.switch_cpus1 progress event, total committed:14854113, progress insts committed: 7446832, IPC: 0.743939
+15657923743998: Event_284: system.switch_cpus2 progress event, total committed:14884206, progress insts committed: 7469532, IPC: 0.746206
+15657923743998: Event_285: system.switch_cpus3 progress event, total committed:14877865, progress insts committed: 7462639, IPC: 0.745518
+15661257077331: Event_285: system.switch_cpus3 progress event, total committed:22054254, progress insts committed: 7176389, IPC: 0.716921
+15661257077331: Event_284: system.switch_cpus2 progress event, total committed:22054779, progress insts committed: 7170573, IPC: 00.71634
+15661257077331: Event_283: system.switch_cpus1 progress event, total committed:22039813, progress insts committed: 7185700, IPC: 0.717851
+15661257077331: Event_282: system.switch_cpus0 progress event, total committed:22041648, progress insts committed: 7185435, IPC: 0.717825
+15664590410664: Event_282: system.switch_cpus0 progress event, total committed:29048762, progress insts committed: 7007114, IPC: 0.700011
+15664590410664: Event_283: system.switch_cpus1 progress event, total committed:29046819, progress insts committed: 7007006, IPC: 000000.7
+15664590410664: Event_284: system.switch_cpus2 progress event, total committed:29062514, progress insts committed: 7007735, IPC: 0.700073
+15664590410664: Event_285: system.switch_cpus3 progress event, total committed:29062010, progress insts committed: 7007756, IPC: 0.700075
+15667923743997: Event_285: system.switch_cpus3 progress event, total committed:34209997, progress insts committed: 5147987, IPC: 0.514284
+15667923743997: Event_284: system.switch_cpus2 progress event, total committed:34215629, progress insts committed: 5153115, IPC: 0.514796
+15667923743997: Event_283: system.switch_cpus1 progress event, total committed:34196018, progress insts committed: 5149199, IPC: 0.514405
+15667923743997: Event_282: system.switch_cpus0 progress event, total committed:34201293, progress insts committed: 5152531, IPC: 0.514738
+15671257077330: Event_282: system.switch_cpus0 progress event, total committed:39408852, progress insts committed: 5207559, IPC: 0.520235
+15671257077330: Event_283: system.switch_cpus1 progress event, total committed:39397433, progress insts committed: 5201415, IPC: 0.519621
+15671257077330: Event_284: system.switch_cpus2 progress event, total committed:39418826, progress insts committed: 5203197, IPC: 0.519799
+15671257077330: Event_285: system.switch_cpus3 progress event, total committed:39414447, progress insts committed: 5204450, IPC: 0.519925
+15674590410663: Event_285: system.switch_cpus3 progress event, total committed:44678991, progress insts committed: 5264544, IPC: 0.525928
+15674590410663: Event_284: system.switch_cpus2 progress event, total committed:44684103, progress insts committed: 5265277, IPC: 0.526001
+15674590410663: Event_283: system.switch_cpus1 progress event, total committed:44665004, progress insts committed: 5267571, IPC: 00.52623
+15674590410663: Event_282: system.switch_cpus0 progress event, total committed:44678471, progress insts committed: 5269619, IPC: 0.526435
+15677923743996: Event_282: system.switch_cpus0 progress event, total committed:50064586, progress insts committed: 5386115, IPC: 0.538073
+15677923743996: Event_283: system.switch_cpus1 progress event, total committed:50053303, progress insts committed: 5388299, IPC: 0.538291
+15677923743996: Event_284: system.switch_cpus2 progress event, total committed:50071582, progress insts committed: 5387479, IPC: 0.538209
+15677923743996: Event_285: system.switch_cpus3 progress event, total committed:50065795, progress insts committed: 5386804, IPC: 0.538142
+15681257077329: Event_285: system.switch_cpus3 progress event, total committed:60082696, progress insts committed: 10016901, IPC: 01.00069
+15681257077329: Event_284: system.switch_cpus2 progress event, total committed:60085891, progress insts committed: 10014309, IPC: 01.00043
+15681257077329: Event_283: system.switch_cpus1 progress event, total committed:60082136, progress insts committed: 10028833, IPC: 01.00188
+15681257077329: Event_282: system.switch_cpus0 progress event, total committed:60082197, progress insts committed: 10017611, IPC: 01.00076
+15684590410662: Event_282: system.switch_cpus0 progress event, total committed:74905911, progress insts committed: 14823714, IPC: 01.48089
+15684590410662: Event_283: system.switch_cpus1 progress event, total committed:74905134, progress insts committed: 14822998, IPC: 01.48082
+15684590410662: Event_284: system.switch_cpus2 progress event, total committed:74951350, progress insts committed: 14865459, IPC: 01.48506
+15684590410662: Event_285: system.switch_cpus3 progress event, total committed:74838762, progress insts committed: 14756066, IPC: 01.47413
+15687923743995: Event_285: system.switch_cpus3 progress event, total committed:87279537, progress insts committed: 12440775, IPC: 01.24283
+15687923743995: Event_284: system.switch_cpus2 progress event, total committed:87281251, progress insts committed: 12329901, IPC: 01.23176
+15687923743995: Event_283: system.switch_cpus1 progress event, total committed:87281251, progress insts committed: 12376117, IPC: 01.23637
+15687923743995: Event_282: system.switch_cpus0 progress event, total committed:87281251, progress insts committed: 12375340, IPC: 001.2363
+15691257077328: Event_282: system.switch_cpus0 progress event, total committed:104804506, progress insts committed: 17523255, IPC: 01.75057
+15691257077328: Event_283: system.switch_cpus1 progress event, total committed:104811558, progress insts committed: 17530307, IPC: 01.75128
+15691257077328: Event_284: system.switch_cpus2 progress event, total committed:104804506, progress insts committed: 17523255, IPC: 01.75057
+15691257077328: Event_285: system.switch_cpus3 progress event, total committed:104804506, progress insts committed: 17524969, IPC: 01.75074
+15694590410661: Event_285: system.switch_cpus3 progress event, total committed:122245268, progress insts committed: 17440762, IPC: 01.74233
+15694590410661: Event_284: system.switch_cpus2 progress event, total committed:122245268, progress insts committed: 17440762, IPC: 01.74233
+15694590410661: Event_283: system.switch_cpus1 progress event, total committed:122259228, progress insts committed: 17447670, IPC: 01.74302
+15694590410661: Event_282: system.switch_cpus0 progress event, total committed:122245268, progress insts committed: 17440762, IPC: 01.74233
+15697923743994: Event_282: system.switch_cpus0 progress event, total committed:133565194, progress insts committed: 11319926, IPC: 01.13086
+15697923743994: Event_283: system.switch_cpus1 progress event, total committed:133714916, progress insts committed: 11455688, IPC: 01.14442
+15697923743994: Event_284: system.switch_cpus2 progress event, total committed:133573030, progress insts committed: 11327762, IPC: 01.13164
+15697923743994: Event_285: system.switch_cpus3 progress event, total committed:133585552, progress insts committed: 11340284, IPC: 01.13289
+15701257077327: Event_285: system.switch_cpus3 progress event, total committed:149245213, progress insts committed: 15659661, IPC: 001.5644
+15701257077327: Event_284: system.switch_cpus2 progress event, total committed:149245213, progress insts committed: 15672183, IPC: 01.56565
+15701257077327: Event_283: system.switch_cpus1 progress event, total committed:149265374, progress insts committed: 15550458, IPC: 01.55349
+15701257077327: Event_282: system.switch_cpus0 progress event, total committed:149245200, progress insts committed: 15680006, IPC: 01.56643
+15704590410660: Event_282: system.switch_cpus0 progress event, total committed:166658196, progress insts committed: 17412996, IPC: 01.73956
+15704590410660: Event_283: system.switch_cpus1 progress event, total committed:166677196, progress insts committed: 17411822, IPC: 01.73944
+15704590410660: Event_284: system.switch_cpus2 progress event, total committed:166658370, progress insts committed: 17413157, IPC: 01.73957
+15704590410660: Event_285: system.switch_cpus3 progress event, total committed:166659036, progress insts committed: 17413823, IPC: 01.73964
+15707923743993: Event_285: system.switch_cpus3 progress event, total committed:179107647, progress insts committed: 12448611, IPC: 01.24362
+15707923743993: Event_284: system.switch_cpus2 progress event, total committed:179092866, progress insts committed: 12434496, IPC: 01.24221
+15707923743993: Event_283: system.switch_cpus1 progress event, total committed:179424577, progress insts committed: 12747381, IPC: 01.27346
+15707923743993: Event_282: system.switch_cpus0 progress event, total committed:179084674, progress insts committed: 12426478, IPC: 01.24141
+15711257077326: Event_282: system.switch_cpus0 progress event, total committed:193715588, progress insts committed: 14630914, IPC: 01.46163
+15711257077326: Event_283: system.switch_cpus1 progress event, total committed:193734821, progress insts committed: 14310244, IPC: 01.42959
+15711257077326: Event_284: system.switch_cpus2 progress event, total committed:193716941, progress insts committed: 14624075, IPC: 01.46095
+15711257077326: Event_285: system.switch_cpus3 progress event, total committed:193715868, progress insts committed: 14608221, IPC: 01.45936
+15714590410659: Event_285: system.switch_cpus3 progress event, total committed:211039498, progress insts committed: 17323630, IPC: 01.73063
+15714590410659: Event_284: system.switch_cpus2 progress event, total committed:211040329, progress insts committed: 17323388, IPC: 01.73061
+15714590410659: Event_283: system.switch_cpus1 progress event, total committed:211059329, progress insts committed: 17324508, IPC: 01.73072
+15714590410659: Event_282: system.switch_cpus0 progress event, total committed:211038726, progress insts committed: 17323138, IPC: 01.73058
+15717923743992: Event_282: system.switch_cpus0 progress event, total committed:223707080, progress insts committed: 12668354, IPC: 01.26557
+15717923743992: Event_283: system.switch_cpus1 progress event, total committed:224014084, progress insts committed: 12954755, IPC: 01.29418
+15717923743992: Event_284: system.switch_cpus2 progress event, total committed:223713760, progress insts committed: 12673431, IPC: 01.26608
+15717923743992: Event_285: system.switch_cpus3 progress event, total committed:223707079, progress insts committed: 12667581, IPC: 01.26549
+15721257077325: Event_285: system.switch_cpus3 progress event, total committed:237511387, progress insts committed: 13804308, IPC: 01.37905
+15721257077325: Event_284: system.switch_cpus2 progress event, total committed:237520328, progress insts committed: 13806568, IPC: 01.37928
+15721257077325: Event_283: system.switch_cpus1 progress event, total committed:237535613, progress insts committed: 13521529, IPC: 001.3508
+15721257077325: Event_282: system.switch_cpus0 progress event, total committed:237516827, progress insts committed: 13809747, IPC: 01.37959
+15724590410658: Event_282: system.switch_cpus0 progress event, total committed:254573813, progress insts committed: 17056986, IPC: 01.70399
+15724590410658: Event_283: system.switch_cpus1 progress event, total committed:254588953, progress insts committed: 17053340, IPC: 01.70363
+15724590410658: Event_284: system.switch_cpus2 progress event, total committed:254577834, progress insts committed: 17057506, IPC: 01.70404
+15724590410658: Event_285: system.switch_cpus3 progress event, total committed:254573734, progress insts committed: 17062347, IPC: 01.70453
+15727923743991: Event_285: system.switch_cpus3 progress event, total committed:268445184, progress insts committed: 13871450, IPC: 01.38576
+15727923743991: Event_284: system.switch_cpus2 progress event, total committed:268448547, progress insts committed: 13870713, IPC: 01.38568
+15727923743991: Event_283: system.switch_cpus1 progress event, total committed:268456504, progress insts committed: 13867551, IPC: 01.38537
+15727923743991: Event_282: system.switch_cpus0 progress event, total committed:268445019, progress insts committed: 13871206, IPC: 01.38573
+15731257077324: Event_282: system.switch_cpus0 progress event, total committed:288489271, progress insts committed: 20044252, IPC: 02.00242
+15731257077324: Event_283: system.switch_cpus1 progress event, total committed:288701081, progress insts committed: 20244577, IPC: 02.02243
+15731257077324: Event_284: system.switch_cpus2 progress event, total committed:288530695, progress insts committed: 20082148, IPC: 02.00621
+15731257077324: Event_285: system.switch_cpus3 progress event, total committed:288530695, progress insts committed: 20085511, IPC: 02.00654
+15734590410657: Event_285: system.switch_cpus3 progress event, total committed:328136799, progress insts committed: 39606104, IPC: 03.95665
+15734590410657: Event_284: system.switch_cpus2 progress event, total committed:328119371, progress insts committed: 39588676, IPC: 03.95491
+15734590410657: Event_283: system.switch_cpus1 progress event, total committed:328335396, progress insts committed: 39634315, IPC: 03.95947
+15734590410657: Event_282: system.switch_cpus0 progress event, total committed:328102267, progress insts committed: 39612996, IPC: 03.95734
+15737923743990: Event_282: system.switch_cpus0 progress event, total committed:367294303, progress insts committed: 39192036, IPC: 03.91528
+15737923743990: Event_283: system.switch_cpus1 progress event, total committed:367352895, progress insts committed: 39017499, IPC: 03.89785
+15737923743990: Event_284: system.switch_cpus2 progress event, total committed:367304219, progress insts committed: 39184848, IPC: 03.91457
+15737923743990: Event_285: system.switch_cpus3 progress event, total committed:367309626, progress insts committed: 39172827, IPC: 03.91337
+15741257077323: Event_285: system.switch_cpus3 progress event, total committed:406014285, progress insts committed: 38704659, IPC: 003.8666
+15741257077323: Event_284: system.switch_cpus2 progress event, total committed:405998627, progress insts committed: 38694408, IPC: 03.86557
+15741257077323: Event_283: system.switch_cpus1 progress event, total committed:406076917, progress insts committed: 38724022, IPC: 03.86853
+15741257077323: Event_282: system.switch_cpus0 progress event, total committed:405996481, progress insts committed: 38702178, IPC: 03.86635
+Exiting @ tick 15741795845268 because a thread reached the max instruction count

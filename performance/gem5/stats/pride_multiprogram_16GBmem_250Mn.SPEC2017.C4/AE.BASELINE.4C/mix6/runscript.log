@@ -1,0 +1,110 @@
+Command line:
+./runscript_pride.sh mix6 AE.BASELINE.4C 4 2017
+Global frequency set at 1000000000000 ticks per second
+DRAM config: RowsPerBank: 65536, BanksPerRank: 32, RanksPerChannel: 1
+warn: Sockets disabled, not accepting gdb connections
+warn: CoherentXBar system.cpu0.mmucache.mmubus has no snooping ports attached!
+warn: CoherentXBar system.cpu1.mmucache.mmubus has no snooping ports attached!
+warn: CoherentXBar system.cpu2.mmucache.mmubus has no snooping ports attached!
+warn: CoherentXBar system.cpu3.mmucache.mmubus has no snooping ports attached!
+warn: Checkpoints for file descriptors currently do not work.
+warn: Checkpoints for file descriptors currently do not work.
+warn: Checkpoints for file descriptors currently do not work.
+warn: Checkpoints for file descriptors currently do not work.
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 20.1.0.5
+gem5 compiled Jul 12 2024 12:42:38
+gem5 started Jul 17 2024 12:52:00
+gem5 executing on a07dda8b130c, pid 86909
+command line: /home/user/PrIDE/performance/gem5/build/X86/gem5.opt --outdir=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix6 /home/user/PrIDE/performance/gem5/configs/example/se_rq_spec_config_multicore.py --redirects /lib64=/home/utils/gcc-6.2.0/lib64 --benchmark=mix6 --benchmark_stdout=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix6/mix6.out --benchmark_stderr=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix6/mix6.err --spec-version=2017 --num-cpus=4 --mem-size=16GB --mem-type=DDR5_2400_32x4 --mem-ranks=1 --checkpoint-dir=/home/user/PrIDE/performance/gem5/cpts/multiprogram_16GBmem_25Bn.SPEC2017.C4/mix6-1-ref-x86 --checkpoint-restore=25000000000 --at-instruction --cpu-type DerivO3CPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l1d_assoc=8 --l1i_assoc=8 --l2_assoc=16 --maxinsts=250000000 --prog-interval=300Hz
+
+info: Standard input is not a terminal, disabling listeners.
+Benchmark- 0   nab
+Selected benchmark
+--> nab
+CMD: ['/opt/spec2017/benchspec/CPU/544.nab_r/run/run_base_refrate_gem5_se-m64.0000/nab_r_base.gem5_se-m64', '1am0', '1122214447', '122']
+CWD: /opt/spec2017/benchspec/CPU/544.nab_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix6/mix6.out_0
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix6/mix6.err_0
+Benchmark- 1   lbm
+Selected benchmark
+--> lbm
+CMD: ['/opt/spec2017/benchspec/CPU/519.lbm_r/run/run_base_refrate_gem5_se-m64.0000/lbm_r_base.gem5_se-m64', '3000', 'reference.dat', '0', '0', '/opt/spec2017/benchspec/CPU/519.lbm_r/run/run_base_refrate_gem5_se-m64.0000/100_100_130_ldc.of']
+CWD: /opt/spec2017/benchspec/CPU/519.lbm_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix6/mix6.out_1
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix6/mix6.err_1
+Benchmark- 2   imagick
+Selected benchmark
+--> imagick
+CMD: ['/opt/spec2017/benchspec/CPU/538.imagick_r/run/run_base_refrate_gem5_se-m64.0000/imagick_r_base.gem5_se-m64', '-limit', 'disk', '0', '/opt/spec2017/benchspec/CPU/538.imagick_r/run/run_base_refrate_gem5_se-m64.0000/refrate_input.tga', '-edge', '41', '-resample', '181%', '-emboss', '31', '-colorspace', 'YUV', '-mean-shift', '19x19+15%', '-resize', '30%', '/opt/spec2017/benchspec/CPU/538.imagick_r/run/run_base_refrate_gem5_se-m64.0000/refrate_output.tga']
+CWD: /opt/spec2017/benchspec/CPU/538.imagick_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix6/mix6.out_2
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix6/mix6.err_2
+Benchmark- 3   povray
+Selected benchmark
+--> povray
+CMD: ['/opt/spec2017/benchspec/CPU/511.povray_r/run/run_base_refrate_gem5_se-m64.0000/povray_r_base.gem5_se-m64', '/opt/spec2017/benchspec/CPU/511.povray_r/run/run_base_refrate_gem5_se-m64.0000/SPEC-benchmark-ref.ini']
+CWD: /opt/spec2017/benchspec/CPU/511.povray_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix6/mix6.out_3
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix6/mix6.err_3
+Workload-0: 
+['/opt/spec2017/benchspec/CPU/544.nab_r/run/run_base_refrate_gem5_se-m64.0000/nab_r_base.gem5_se-m64', '1am0', '1122214447', '122']
+Workload-1: 
+['/opt/spec2017/benchspec/CPU/519.lbm_r/run/run_base_refrate_gem5_se-m64.0000/lbm_r_base.gem5_se-m64', '3000', 'reference.dat', '0', '0', '/opt/spec2017/benchspec/CPU/519.lbm_r/run/run_base_refrate_gem5_se-m64.0000/100_100_130_ldc.of']
+Workload-2: 
+['/opt/spec2017/benchspec/CPU/538.imagick_r/run/run_base_refrate_gem5_se-m64.0000/imagick_r_base.gem5_se-m64', '-limit', 'disk', '0', '/opt/spec2017/benchspec/CPU/538.imagick_r/run/run_base_refrate_gem5_se-m64.0000/refrate_input.tga', '-edge', '41', '-resample', '181%', '-emboss', '31', '-colorspace', 'YUV', '-mean-shift', '19x19+15%', '-resize', '30%', '/opt/spec2017/benchspec/CPU/538.imagick_r/run/run_base_refrate_gem5_se-m64.0000/refrate_output.tga']
+Workload-3: 
+['/opt/spec2017/benchspec/CPU/511.povray_r/run/run_base_refrate_gem5_se-m64.0000/povray_r_base.gem5_se-m64', '/opt/spec2017/benchspec/CPU/511.povray_r/run/run_base_refrate_gem5_se-m64.0000/SPEC-benchmark-ref.ini']
+defense_enable:  False  detector:  MG  mitigation:  RRS  threshold:  800
+mg_entries:  1700
+rrs_tuples:  3400 rrs_swap_delay:  2740ns rit_acc_delay:  1.25ns
+Switch at curTick count:10000
+warn: membus.master is deprecated. `master` is now called `mem_side_ports`
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+info: Entering event queue @ 13719052538010.  Starting simulation...
+info: Entering event queue @ 13719052548010.  Starting simulation...
+warn: PowerState: Already in the requested power state, request ignored
+Switched CPUS @ tick 13719052548010
+switching cpus
+**** REAL SIMULATION ****
+info: Entering event queue @ 13719052548333.  Starting simulation...
+13722385871343: Event_285: system.switch_cpus3 progress event, total committed:44419262, progress insts committed: 44419262, IPC: 04.43748
+13722385871343: Event_284: system.switch_cpus2 progress event, total committed:50481920, progress insts committed: 50481920, IPC: 05.04314
+13722385871343: Event_283: system.switch_cpus1 progress event, total committed:10323330, progress insts committed: 10323330, IPC: 001.0313
+13722385871343: Event_282: system.switch_cpus0 progress event, total committed:34990891, progress insts committed: 34990891, IPC: 03.49559
+13725719204676: Event_282: system.switch_cpus0 progress event, total committed:71645296, progress insts committed: 36654405, IPC: 03.66178
+13725719204676: Event_283: system.switch_cpus1 progress event, total committed:17657651, progress insts committed: 7334321, IPC: 0.732699
+13725719204676: Event_284: system.switch_cpus2 progress event, total committed:102712846, progress insts committed: 52230926, IPC: 05.21787
+13725719204676: Event_285: system.switch_cpus3 progress event, total committed:89781954, progress insts committed: 45362692, IPC: 04.53173
+13729052538009: Event_285: system.switch_cpus3 progress event, total committed:135290096, progress insts committed: 45508142, IPC: 04.54626
+13729052538009: Event_284: system.switch_cpus2 progress event, total committed:155144091, progress insts committed: 52431245, IPC: 05.23788
+13729052538009: Event_283: system.switch_cpus1 progress event, total committed:26509941, progress insts committed: 8852290, IPC: 0.884344
+13729052538009: Event_282: system.switch_cpus0 progress event, total committed:110241799, progress insts committed: 38596503, IPC: 03.85579
+warn: MOVNTDQ: Ignoring non-temporal hint, modeling as cacheable!
+13732385871342: Event_282: system.switch_cpus0 progress event, total committed:148059301, progress insts committed: 37817502, IPC: 03.77797
+13732385871342: Event_283: system.switch_cpus1 progress event, total committed:34621138, progress insts committed: 8111197, IPC: 0.810309
+13732385871342: Event_284: system.switch_cpus2 progress event, total committed:163481767, progress insts committed: 8337676, IPC: 0.832934
+13732385871342: Event_285: system.switch_cpus3 progress event, total committed:180963395, progress insts committed: 45673299, IPC: 04.56276
+13735719204675: Event_285: system.switch_cpus3 progress event, total committed:225977109, progress insts committed: 45013714, IPC: 04.49687
+13735719204675: Event_284: system.switch_cpus2 progress event, total committed:189777993, progress insts committed: 26296226, IPC: 02.62699
+13735719204675: Event_283: system.switch_cpus1 progress event, total committed:42698322, progress insts committed: 8077184, IPC: 0.806911
+13735719204675: Event_282: system.switch_cpus0 progress event, total committed:184781233, progress insts committed: 36721932, IPC: 03.66852
+13739052538008: Event_282: system.switch_cpus0 progress event, total committed:221747801, progress insts committed: 36966568, IPC: 03.69296
+13739052538008: Event_283: system.switch_cpus1 progress event, total committed:51269487, progress insts committed: 8571165, IPC: 0.856259
+13739052538008: Event_284: system.switch_cpus2 progress event, total committed:242155457, progress insts committed: 52377464, IPC: 05.23251
+13739052538008: Event_285: system.switch_cpus3 progress event, total committed:270939816, progress insts committed: 44962707, IPC: 04.49177
+13742385871341: Event_285: system.switch_cpus3 progress event, total committed:316002432, progress insts committed: 45062616, IPC: 04.50176
+13742385871341: Event_284: system.switch_cpus2 progress event, total committed:294701643, progress insts committed: 52546186, IPC: 05.24936
+13742385871341: Event_283: system.switch_cpus1 progress event, total committed:60072312, progress insts committed: 8802825, IPC: 0.879402
+13742385871341: Event_282: system.switch_cpus0 progress event, total committed:261052625, progress insts committed: 39304824, IPC: 03.92655
+13745719204674: Event_282: system.switch_cpus0 progress event, total committed:299297425, progress insts committed: 38244800, IPC: 03.82066
+13745719204674: Event_283: system.switch_cpus1 progress event, total committed:69006022, progress insts committed: 8933710, IPC: 0.892478
+13745719204674: Event_284: system.switch_cpus2 progress event, total committed:347277751, progress insts committed: 52576108, IPC: 05.25235
+13745719204674: Event_285: system.switch_cpus3 progress event, total committed:361178898, progress insts committed: 45176466, IPC: 04.51313
+13749052538007: Event_285: system.switch_cpus3 progress event, total committed:406102399, progress insts committed: 44923501, IPC: 04.48786
+13749052538007: Event_284: system.switch_cpus2 progress event, total committed:399803521, progress insts committed: 52525770, IPC: 05.24732
+13749052538007: Event_283: system.switch_cpus1 progress event, total committed:78238429, progress insts committed: 9232407, IPC: 0.922317
+13749052538007: Event_282: system.switch_cpus0 progress event, total committed:338045973, progress insts committed: 38748548, IPC: 03.87098
+Exiting @ tick 13750531311393 because a thread reached the max instruction count

@@ -1,0 +1,194 @@
+Name "main::norm_val" used only once: possible typo at getdata.pl line 291.
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix15, core: 2
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix12, core: 1
+Warning: base_ipc_wname 'parest' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix12, core: 3
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix10, core: 1
+Warning: base_ipc_wname 'gcc' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix10, core: 2
+Warning: base_ipc_wname 'bwaves' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix1, core: 2
+Warning: base_ipc_wname 'bwaves' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix7, core: 3
+Warning: base_ipc_wname 'gcc' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix19, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix20, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix20, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix20, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix20, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix21, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix21, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix21, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix21, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix24, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix24, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix24, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 0, workload: mix24, core: 3
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix15, core: 2
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix12, core: 1
+Warning: base_ipc_wname 'parest' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix12, core: 3
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix10, core: 1
+Warning: base_ipc_wname 'gcc' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix10, core: 2
+Warning: base_ipc_wname 'bwaves' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix1, core: 2
+Warning: base_ipc_wname 'bwaves' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix7, core: 3
+Warning: base_ipc_wname 'gcc' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix19, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix20, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix20, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix20, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix20, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix21, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix21, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix21, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix21, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix24, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix24, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix24, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 1, workload: mix24, core: 3
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix15, core: 2
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix12, core: 1
+Warning: base_ipc_wname 'parest' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix12, core: 3
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix10, core: 1
+Warning: base_ipc_wname 'gcc' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix10, core: 2
+Warning: base_ipc_wname 'bwaves' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix1, core: 2
+Warning: base_ipc_wname 'bwaves' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix7, core: 3
+Warning: base_ipc_wname 'gcc' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix19, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix20, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix20, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix20, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix20, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix21, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix21, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix21, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix21, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix24, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix24, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix24, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 2, workload: mix24, core: 3
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix15, core: 2
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix12, core: 1
+Warning: base_ipc_wname 'parest' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix12, core: 3
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix10, core: 1
+Warning: base_ipc_wname 'gcc' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix10, core: 2
+Warning: base_ipc_wname 'bwaves' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix1, core: 2
+Warning: base_ipc_wname 'bwaves' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix7, core: 3
+Warning: base_ipc_wname 'gcc' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix19, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix20, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix20, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix20, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix20, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix21, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix21, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix21, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix21, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix24, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix24, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix24, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 3, workload: mix24, core: 3
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix15, core: 2
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix12, core: 1
+Warning: base_ipc_wname 'parest' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix12, core: 3
+Warning: base_ipc_wname 'x264' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix10, core: 1
+Warning: base_ipc_wname 'gcc' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix10, core: 2
+Warning: base_ipc_wname 'bwaves' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix1, core: 2
+Warning: base_ipc_wname 'bwaves' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix7, core: 3
+Warning: base_ipc_wname 'gcc' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix19, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix20, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix20, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix20, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix20, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix21, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix21, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix21, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix21, core: 3
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix24, core: 0
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix24, core: 1
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix24, core: 2
+Use of uninitialized value $base_ipc_wname in concatenation (.) or string at getdata.pl line 1106.
+Warning: base_ipc_wname '' is not defined or does not exist in base_ipc_gem5 at dirnum: 4, workload: mix24, core: 3
+
+               Expts	17.C4/AE.BASELINE.4C	C2017.C4/RFM1.BR1.4C	C2017.C4/RFM2.BR1.4C	C2017.C4/RFM5.BR1.4C	
+
+             blender	       1.000 	       0.998 	       0.998 	       0.957 	
+                 lbm	       1.000 	       1.000 	       0.991 	       0.860 	
+                roms	       1.000 	       1.016 	       0.997 	       0.940 	
+                 mcf	       1.000 	       0.996 	       0.999 	       0.997 	
+           cactuBSSN	       1.000 	       1.014 	       1.005 	       0.972 	
+                  xz	       1.000 	       1.000 	       1.000 	       0.999 	
+           deepsjeng	       1.000 	       1.000 	       1.000 	       1.000 	
+             imagick	       1.000 	       1.000 	       1.000 	       0.998 	
+                 nab	       1.000 	       1.000 	       1.000 	       1.000 	
+                namd	       1.000 	       1.000 	       1.000 	       1.000 	
+               leela	       1.000 	       1.000 	       1.000 	       1.000 	
+                 wrf	       1.000 	       1.000 	       0.998 	       0.988 	
+              povray	       1.000 	       1.000 	       1.000 	       1.000 	
+           exchange2	       1.000 	       1.000 	       1.000 	       1.000 	
+               mix11	       1.000 	       0.999 	       0.996 	       0.947 	
+               mix13	       1.000 	       0.999 	       0.997 	       0.950 	
+                mix6	       1.000 	       1.000 	       0.999 	       0.967 	
+               mix15	       1.000 	       1.000 	       0.999 	       0.995 	
+                mix4	       1.000 	       1.000 	       1.000 	       1.000 	
+               mix12	       1.000 	       1.000 	       0.999 	       0.995 	
+               mix10	       1.000 	       1.000 	       1.000 	       1.000 	
+                mix1	       1.000 	       1.000 	       1.000 	       0.997 	
+                mix7	       1.000 	       1.000 	       0.999 	       0.995 	
+                mix3	       1.000 	       1.000 	       1.000 	       1.000 	
+               mix19	       1.000 	       1.000 	       1.000 	       1.000 	
+               mix20	       1.000 	       1.000 	       0.999 	       0.995 	
+               mix21	       1.000 	       1.000 	       1.000 	       0.997 	
+               mix24	       1.000 	       1.000 	       1.000 	       1.000 	
+
+               Gmean	       1.000 	       1.001 	       0.999 	       0.983 	

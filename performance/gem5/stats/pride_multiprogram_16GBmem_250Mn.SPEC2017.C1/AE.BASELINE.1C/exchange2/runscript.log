@@ -1,0 +1,53 @@
+Command line:
+./runscript_pride.sh exchange2 AE.BASELINE.1C 1 2017
+Global frequency set at 1000000000000 ticks per second
+DRAM config: RowsPerBank: 65536, BanksPerRank: 32, RanksPerChannel: 1
+warn: Sockets disabled, not accepting gdb connections
+warn: CoherentXBar system.cpu.mmucache.mmubus has no snooping ports attached!
+warn: Checkpoints for file descriptors currently do not work.
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 20.1.0.5
+gem5 compiled Jul 12 2024 12:42:38
+gem5 started Jul 17 2024 12:51:59
+gem5 executing on a07dda8b130c, pid 86654
+command line: /home/user/PrIDE/performance/gem5/build/X86/gem5.opt --outdir=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/exchange2 /home/user/PrIDE/performance/gem5/configs/example/se_rq_spec_config_multicore.py --redirects /lib64=/home/utils/gcc-6.2.0/lib64 --benchmark=exchange2 --benchmark_stdout=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/exchange2/exchange2.out --benchmark_stderr=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/exchange2/exchange2.err --spec-version=2017 --num-cpus=1 --mem-size=16GB --mem-type=DDR5_2400_32x4 --mem-ranks=1 --checkpoint-dir=/home/user/PrIDE/performance/gem5/cpts/multiprogram_16GBmem_25Bn.SPEC2017.C1/exchange2-1-ref-x86 --checkpoint-restore=25000000000 --at-instruction --cpu-type DerivO3CPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l1d_assoc=8 --l1i_assoc=8 --l2_assoc=16 --maxinsts=250000000 --prog-interval=300Hz
+
+info: Standard input is not a terminal, disabling listeners.
+Benchmark- 0   exchange2
+Selected benchmark
+--> exchange2
+CMD: ['/opt/spec2017/benchspec/CPU/548.exchange2_r/run/run_base_refrate_gem5_se-m64.0000/exchange2_r_base.gem5_se-m64', '6']
+CWD: /opt/spec2017/benchspec/CPU/548.exchange2_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/exchange2/exchange2.out_0
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/exchange2/exchange2.err_0
+Workload-0: 
+['/opt/spec2017/benchspec/CPU/548.exchange2_r/run/run_base_refrate_gem5_se-m64.0000/exchange2_r_base.gem5_se-m64', '6']
+defense_enable:  False  detector:  MG  mitigation:  RRS  threshold:  800
+mg_entries:  1700
+rrs_tuples:  3400 rrs_swap_delay:  2740ns rit_acc_delay:  1.25ns
+Switch at curTick count:10000
+warn: membus.master is deprecated. `master` is now called `mem_side_ports`
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+info: Entering event queue @ 19742845055004.  Starting simulation...
+warn: PowerState: Already in the requested power state, request ignored
+Switched CPUS @ tick 19742845065004
+switching cpus
+**** REAL SIMULATION ****
+info: Entering event queue @ 19742845065004.  Starting simulation...
+19746178388337: Event_93: system.switch_cpus progress event, total committed:33228670, progress insts committed: 33228670, IPC: 03.31954
+19749511721670: Event_93: system.switch_cpus progress event, total committed:66379651, progress insts committed: 33150981, IPC: 03.31178
+19752845055003: Event_93: system.switch_cpus progress event, total committed:100573474, progress insts committed: 34193823, IPC: 03.41596
+19756178388336: Event_93: system.switch_cpus progress event, total committed:136558480, progress insts committed: 35985006, IPC: 003.5949
+19759511721669: Event_93: system.switch_cpus progress event, total committed:173304469, progress insts committed: 36745989, IPC: 03.67092
+19762845055002: Event_93: system.switch_cpus progress event, total committed:208234675, progress insts committed: 34930206, IPC: 03.48953
+19766178388335: Event_93: system.switch_cpus progress event, total committed:243273140, progress insts committed: 35038465, IPC: 03.50034
+19769511721668: Event_93: system.switch_cpus progress event, total committed:278256075, progress insts committed: 34982935, IPC: 003.4948
+19772845055001: Event_93: system.switch_cpus progress event, total committed:312158082, progress insts committed: 33902007, IPC: 03.38681
+19776178388334: Event_93: system.switch_cpus progress event, total committed:346510420, progress insts committed: 34352338, IPC: 003.4318
+19779511721667: Event_93: system.switch_cpus progress event, total committed:380155190, progress insts committed: 33644770, IPC: 03.36111
+19782845055000: Event_93: system.switch_cpus progress event, total committed:414914374, progress insts committed: 34759184, IPC: 03.47244
+19786178388333: Event_93: system.switch_cpus progress event, total committed:447977787, progress insts committed: 33063413, IPC: 03.30303
+19789511721666: Event_93: system.switch_cpus progress event, total committed:481436131, progress insts committed: 33458344, IPC: 03.34249
+Exiting @ tick 19790306150400 because a thread reached the max instruction count

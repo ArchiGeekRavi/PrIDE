@@ -1,0 +1,49 @@
+Command line:
+./runscript_pride.sh imagick AE.BASELINE.1C 1 2017
+Global frequency set at 1000000000000 ticks per second
+DRAM config: RowsPerBank: 65536, BanksPerRank: 32, RanksPerChannel: 1
+warn: Sockets disabled, not accepting gdb connections
+warn: CoherentXBar system.cpu.mmucache.mmubus has no snooping ports attached!
+warn: Checkpoints for file descriptors currently do not work.
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 20.1.0.5
+gem5 compiled Jul 12 2024 12:42:38
+gem5 started Jul 17 2024 12:51:59
+gem5 executing on a07dda8b130c, pid 86633
+command line: /home/user/PrIDE/performance/gem5/build/X86/gem5.opt --outdir=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/imagick /home/user/PrIDE/performance/gem5/configs/example/se_rq_spec_config_multicore.py --redirects /lib64=/home/utils/gcc-6.2.0/lib64 --benchmark=imagick --benchmark_stdout=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/imagick/imagick.out --benchmark_stderr=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/imagick/imagick.err --spec-version=2017 --num-cpus=1 --mem-size=16GB --mem-type=DDR5_2400_32x4 --mem-ranks=1 --checkpoint-dir=/home/user/PrIDE/performance/gem5/cpts/multiprogram_16GBmem_25Bn.SPEC2017.C1/imagick-1-ref-x86 --checkpoint-restore=25000000000 --at-instruction --cpu-type DerivO3CPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l1d_assoc=8 --l1i_assoc=8 --l2_assoc=16 --maxinsts=250000000 --prog-interval=300Hz
+
+info: Standard input is not a terminal, disabling listeners.
+Benchmark- 0   imagick
+Selected benchmark
+--> imagick
+CMD: ['/opt/spec2017/benchspec/CPU/538.imagick_r/run/run_base_refrate_gem5_se-m64.0000/imagick_r_base.gem5_se-m64', '-limit', 'disk', '0', '/opt/spec2017/benchspec/CPU/538.imagick_r/run/run_base_refrate_gem5_se-m64.0000/refrate_input.tga', '-edge', '41', '-resample', '181%', '-emboss', '31', '-colorspace', 'YUV', '-mean-shift', '19x19+15%', '-resize', '30%', '/opt/spec2017/benchspec/CPU/538.imagick_r/run/run_base_refrate_gem5_se-m64.0000/refrate_output.tga']
+CWD: /opt/spec2017/benchspec/CPU/538.imagick_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/imagick/imagick.out_0
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/imagick/imagick.err_0
+Workload-0: 
+['/opt/spec2017/benchspec/CPU/538.imagick_r/run/run_base_refrate_gem5_se-m64.0000/imagick_r_base.gem5_se-m64', '-limit', 'disk', '0', '/opt/spec2017/benchspec/CPU/538.imagick_r/run/run_base_refrate_gem5_se-m64.0000/refrate_input.tga', '-edge', '41', '-resample', '181%', '-emboss', '31', '-colorspace', 'YUV', '-mean-shift', '19x19+15%', '-resize', '30%', '/opt/spec2017/benchspec/CPU/538.imagick_r/run/run_base_refrate_gem5_se-m64.0000/refrate_output.tga']
+defense_enable:  False  detector:  MG  mitigation:  RRS  threshold:  800
+mg_entries:  1700
+rrs_tuples:  3400 rrs_swap_delay:  2740ns rit_acc_delay:  1.25ns
+Switch at curTick count:10000
+warn: membus.master is deprecated. `master` is now called `mem_side_ports`
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+info: Entering event queue @ 17327668649670.  Starting simulation...
+info: Entering event queue @ 17327668659670.  Starting simulation...
+warn: PowerState: Already in the requested power state, request ignored
+Switched CPUS @ tick 17327668659670
+switching cpus
+**** REAL SIMULATION ****
+info: Entering event queue @ 17327668659993.  Starting simulation...
+17331001983003: Event_93: system.switch_cpus progress event, total committed:51317168, progress insts committed: 51317168, IPC: 05.12659
+17334335316336: Event_93: system.switch_cpus progress event, total committed:104551396, progress insts committed: 53234228, IPC: 005.3181
+17337668649669: Event_93: system.switch_cpus progress event, total committed:156992391, progress insts committed: 52440995, IPC: 05.23886
+17341001983002: Event_93: system.switch_cpus progress event, total committed:209405483, progress insts committed: 52413092, IPC: 05.23607
+warn: MOVNTDQ: Ignoring non-temporal hint, modeling as cacheable!
+17344335316335: Event_93: system.switch_cpus progress event, total committed:239682962, progress insts committed: 30277479, IPC: 03.02472
+17347668649668: Event_93: system.switch_cpus progress event, total committed:293324320, progress insts committed: 53641358, IPC: 05.35877
+17351001983001: Event_93: system.switch_cpus progress event, total committed:347154954, progress insts committed: 53830634, IPC: 05.37768
+17354335316334: Event_93: system.switch_cpus progress event, total committed:400814367, progress insts committed: 53659413, IPC: 05.36058
+Exiting @ tick 17355717124119 because a thread reached the max instruction count

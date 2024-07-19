@@ -400,38 +400,74 @@ mix16
 mix7
 mix3';
 
+# @Ravi changes....     gcc (unwind.h library issue); bwaves (more memory usage error) and parest (issue in create checkpoints) and it's mixes...
+# Ravi Extraa mixes I used, mix 22 (more memory usage error)  -->> mix 19 to mix 24 excluded mix 23
+# I haven't included bwaves and mix22 due to getting the problem in calculating Gmean. It can't excluded both of them and calculate it.
 $SUITES{'spec17_all_press'} =
 'blender
 lbm
 roms
-gcc
 mcf
 cactuBSSN
 xz
 deepsjeng
 imagick
 nab
-bwaves
 namd
-parest
 leela
 wrf
 povray
 exchange2
 mix11
 mix13
-mix14
-mix5
 mix6
-mix9
 mix15
 mix4
 mix12
 mix10
-mix8
-mix17
-mix2
 mix1
-mix16
 mix7
-mix3';
+mix3
+mix19
+mix20
+mix21
+mix24';
+# ............
+
+
+# original one:
+#$SUITES{'spec17_all_press'} =
+#'blender
+#lbm
+#roms
+#gcc
+#mcf
+#cactuBSSN
+#xz
+#deepsjeng
+#imagick
+#nab
+#bwaves
+#namd
+#parest
+#leela
+#wrf
+#povray
+#exchange2
+#mix11
+#mix13
+#mix14
+#mix5
+#mix6
+#mix9
+#mix15
+#mix4
+#mix12
+#mix10
+#mix8
+#mix17
+#mix2
+#mix1
+#mix16
+#mix7
+#mix3';
