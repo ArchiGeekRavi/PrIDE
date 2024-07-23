@@ -122,4 +122,5 @@ cd security                                        # Change into the `security` 
 
 * **Checkpoint Folder:** The checkpoint folder can be accessed at the following URL:
   * [Checkpoint Folder (cpts)](https://iitbacin-my.sharepoint.com/:f:/g/personal/ravichoubey_iitb_ac_in/EjkQu5ZR_BNNhq2vtJ02YWAB7KQ2kDp7otR3tnJxNfreVA?e=2FrbXb)
+  * [Performance Graph (Fig 9) of rfm.perf.pride.br1 and rfm.perf.isca.br2](https://docs.google.com/spreadsheets/d/1RikvOT1o3JCZsN7Dqr1qd2JvAyDk4F_MXVWHfOW6wu4/edit?usp=sharing)
 

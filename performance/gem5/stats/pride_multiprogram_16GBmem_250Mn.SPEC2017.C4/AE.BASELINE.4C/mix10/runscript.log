@@ -16,8 +16,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 20.1.0.5
 gem5 compiled Jul 12 2024 12:42:38
-gem5 started Jul 17 2024 12:52:00
-gem5 executing on a07dda8b130c, pid 86935
+gem5 started Jul 22 2024 13:09:33
+gem5 executing on a07dda8b130c, pid 86769
 command line: /home/user/PrIDE/performance/gem5/build/X86/gem5.opt --outdir=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix10 /home/user/PrIDE/performance/gem5/configs/example/se_rq_spec_config_multicore.py --redirects /lib64=/home/utils/gcc-6.2.0/lib64 --benchmark=mix10 --benchmark_stdout=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix10/mix10.out --benchmark_stderr=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix10/mix10.err --spec-version=2017 --num-cpus=4 --mem-size=16GB --mem-type=DDR5_2400_32x4 --mem-ranks=1 --checkpoint-dir=/home/user/PrIDE/performance/gem5/cpts/multiprogram_16GBmem_25Bn.SPEC2017.C4/mix10-1-ref-x86 --checkpoint-restore=25000000000 --at-instruction --cpu-type DerivO3CPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l1d_assoc=8 --l1i_assoc=8 --l2_assoc=16 --maxinsts=250000000 --prog-interval=300Hz
 
 info: Standard input is not a terminal, disabling listeners.

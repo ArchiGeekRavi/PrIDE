@@ -5,7 +5,7 @@
 ######----------------------------------------------------- ######
 
 ## Set the paths
-source env.sh;
+#source env.sh;
 
 
 ## Eror Checking
@@ -33,8 +33,9 @@ fi
 # We left out cam4, xalancbmk, fotonik3d, omnetpp, and x264
 ###### 1-Core SPEC2017 Experiments #######
 echo "Creating 1-Core Checkpoints for 18 Benchmarks"
-for bmk in perlbench gcc bwaves mcf cactuBSSN namd povray lbm wrf\
-  blender deepsjeng imagick leela nab exchange2 roms xz parest; do 
+#for bmk in perlbench gcc bwaves mcf cactuBSSN namd povray lbm wrf\
+ # blender deepsjeng imagick leela nab exchange2 roms xz parest; do 
+for bmk in blender gcc; do 
     if [ $qsub -gt 0 ] 
     then
 	echo "./ckptscript.sh $bmk 1 2017" >> $qsub_cmdfile; 
@@ -42,13 +43,13 @@ for bmk in perlbench gcc bwaves mcf cactuBSSN namd povray lbm wrf\
 	./ckptscript.sh $bmk 1 2017; 
     fi
     # Wait for a core to be available
-    exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`
+    exp_count=`ps aux | grep -i "gem5" | grep -i "pride" | grep -v "grep" | wc -l`
     if [ -z "$qsub" ] 
     then
 	while [ $exp_count -gt ${MAX_GEM5_PARALLEL_RUNS} ]
 	do
             sleep 300
-            exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`
+            exp_count=`ps aux | grep -i "gem5" | grep -i "pride" |  grep -v "grep" | wc -l`
 	    echo "$exp_count"
 	done
     fi
@@ -56,10 +57,11 @@ done
  
 # ####### 4-Core SPEC2017 Experiments #######
 echo "Creating 4-Core Checkpoints for 34 Benchmarks"
- for bmk in perlbench gcc bwaves mcf cactuBSSN namd povray lbm wrf\
-  blender deepsjeng imagick leela nab exchange2 roms xz parest\
-  mix1 mix2 mix3 mix4 mix5 mix6 mix7 mix8 mix9 mix10\
-  mix11 mix12 mix13 mix14 mix15 mix16; do 
+ #for bmk in perlbench gcc bwaves mcf cactuBSSN namd povray lbm wrf\
+ # blender deepsjeng imagick leela nab exchange2 roms xz parest\
+ # mix1 mix2 mix3 mix4 mix5 mix6 mix7 mix8 mix9 mix10\
+ # mix11 mix12 mix13 mix14 mix15 mix16; do 
+ for bmk in gcc mix9 mix14 mix16 mix17; do 
     if [ $qsub -gt 0 ] 
     then    
 	echo "./ckptscript.sh $bmk 4 2017" >> $qsub_cmdfile
@@ -67,13 +69,13 @@ echo "Creating 4-Core Checkpoints for 34 Benchmarks"
 	./ckptscript.sh $bmk 4 2017 ;
     fi
     # Wait for a core to be available
-    exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`
+    exp_count=`ps aux | grep -i "gem5" | grep -i "pride" |  grep -v "grep" | wc -l`
     if [ -z "$qsub" ] 
     then
 	while [ $exp_count -gt ${MAX_GEM5_PARALLEL_RUNS} ]
 	do
             sleep 300
-            exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`
+            exp_count=`ps aux | grep -i "gem5" | grep -i "pride" |  grep -v "grep" | wc -l`
             echo
 	done
     fi
@@ -89,11 +91,11 @@ then
     ## exit immediately
 else
     ## wait for all checkpoints to be created before exiting
-    exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`
+    exp_count=`ps aux | grep -i "gem5" | grep -i "pride" |  grep -v "grep" | wc -l`
     while [ $exp_count -gt 0 ]
     do
 	sleep 300
-	exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`
+	exp_count=`ps aux | grep -i "gem5" | grep -i "pride" | grep -v "grep" | wc -l`
 	echo "Still running ${exp_count} gem5 checkpointing processes"
     done
 fi

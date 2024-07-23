@@ -16,8 +16,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 20.1.0.5
 gem5 compiled Jul 12 2024 12:42:38
-gem5 started Jul 17 2024 12:52:00
-gem5 executing on a07dda8b130c, pid 87039
+gem5 started Jul 22 2024 13:24:33
+gem5 executing on a07dda8b130c, pid 87711
 command line: /home/user/PrIDE/performance/gem5/build/X86/gem5.opt --outdir=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix22 /home/user/PrIDE/performance/gem5/configs/example/se_rq_spec_config_multicore.py --redirects /lib64=/home/utils/gcc-6.2.0/lib64 --benchmark=mix22 --benchmark_stdout=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix22/mix22.out --benchmark_stderr=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/AE.BASELINE.4C/mix22/mix22.err --spec-version=2017 --num-cpus=4 --mem-size=16GB --mem-type=DDR5_2400_32x4 --mem-ranks=1 --checkpoint-dir=/home/user/PrIDE/performance/gem5/cpts/multiprogram_16GBmem_25Bn.SPEC2017.C4/mix22-1-ref-x86 --checkpoint-restore=25000000000 --at-instruction --cpu-type DerivO3CPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l1d_assoc=8 --l1i_assoc=8 --l2_assoc=16 --maxinsts=250000000 --prog-interval=300Hz
 
 info: Standard input is not a terminal, disabling listeners.
@@ -93,39 +93,39 @@ warn: MOVNTDQ: Ignoring non-temporal hint, modeling as cacheable!
 13961825151063: Event_282: system.switch_cpus0 progress event, total committed:81907697, progress insts committed: 15738537, IPC: 01.57228
 panic: Tried to read unmapped address 0xef892350.
 PC: 0x15, Instr:   ADD_M_R : ldst   t1b, DS:[rax]
-Memory Usage: 17416084 KBytes
+Memory Usage: 17416088 KBytes
 Program aborted at tick 13962870026127
 --- BEGIN LIBC BACKTRACE ---
-/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_Z15print_backtracev+0x2c)[0x61f93e1195ac]
-/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_Z12abortHandleri+0x4a)[0x61f93e12c0ca]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x12980)[0x75394b537980]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7)[0x753949a2fe87]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x141)[0x753949a317f1]
-/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(+0x63a78f)[0x61f93dc3a78f]
-/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN6X86ISA9PageFault6invokeEP13ThreadContextRK14RefCountingPtrI10StaticInstE+0x4d4)[0x61f93e525a84]
-/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN13DefaultCommitI9O3CPUImplE10commitHeadERK14RefCountingPtrI13BaseO3DynInstIS0_EEj+0x71b)[0x61f93eb8260b]
-/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN13DefaultCommitI9O3CPUImplE11commitInstsEv+0x6b0)[0x61f93eb83ab0]
-/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN13DefaultCommitI9O3CPUImplE6commitEv+0xc40)[0x61f93eb85600]
-/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN13DefaultCommitI9O3CPUImplE4tickEv+0xe8)[0x61f93eb858d8]
-/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN9FullO3CPUI9O3CPUImplE4tickEv+0x15b)[0x61f93eb9519b]
-/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN10EventQueue10serviceOneEv+0xa5)[0x61f93e121a85]
-/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_Z9doSimLoopP10EventQueue+0x87)[0x61f93e146b47]
-/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_Z8simulatem+0xcba)[0x61f93e147b9a]
-/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(+0x14aa4e1)[0x61f93eaaa4e1]
-/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(+0x888be9)[0x61f93de88be9]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(PyCFunction_Call+0x96)[0x75394b957736]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x76e0)[0x75394b8c8b20]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17ba0f)[0x75394b8bfa0f]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17c0fc)[0x75394b8c00fc]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x4ec3)[0x75394b8c6303]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17a803)[0x75394b8be803]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17c2be)[0x75394b8c02be]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x4ec3)[0x75394b8c6303]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17ba0f)[0x75394b8bfa0f]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17c0fc)[0x75394b8c00fc]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x4ec3)[0x75394b8c6303]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17ba0f)[0x75394b8bfa0f]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(PyEval_EvalCodeEx+0x3e)[0x75394b8c04ce]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(PyEval_EvalCode+0x1b)[0x75394b8c124b]
-/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x18855d)[0x75394b8cc55d]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_Z15print_backtracev+0x2c)[0x5dd57a7195ac]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_Z12abortHandleri+0x4a)[0x5dd57a72c0ca]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x12980)[0x76de83330980]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7)[0x76de81828e87]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141)[0x76de8182a7f1]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(+0x63a78f)[0x5dd57a23a78f]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN6X86ISA9PageFault6invokeEP13ThreadContextRK14RefCountingPtrI10StaticInstE+0x4d4)[0x5dd57ab25a84]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN13DefaultCommitI9O3CPUImplE10commitHeadERK14RefCountingPtrI13BaseO3DynInstIS0_EEj+0x71b)[0x5dd57b18260b]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN13DefaultCommitI9O3CPUImplE11commitInstsEv+0x6b0)[0x5dd57b183ab0]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN13DefaultCommitI9O3CPUImplE6commitEv+0xc40)[0x5dd57b185600]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN13DefaultCommitI9O3CPUImplE4tickEv+0xe8)[0x5dd57b1858d8]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN9FullO3CPUI9O3CPUImplE4tickEv+0x15b)[0x5dd57b19519b]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN10EventQueue10serviceOneEv+0xa5)[0x5dd57a721a85]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_Z9doSimLoopP10EventQueue+0x87)[0x5dd57a746b47]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_Z8simulatem+0xcba)[0x5dd57a747b9a]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(+0x14aa4e1)[0x5dd57b0aa4e1]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(+0x888be9)[0x5dd57a488be9]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(PyCFunction_Call+0x96)[0x76de83750736]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x76e0)[0x76de836c1b20]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17ba0f)[0x76de836b8a0f]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17c0fc)[0x76de836b90fc]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x4ec3)[0x76de836bf303]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17a803)[0x76de836b7803]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17c2be)[0x76de836b92be]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x4ec3)[0x76de836bf303]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17ba0f)[0x76de836b8a0f]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17c0fc)[0x76de836b90fc]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x4ec3)[0x76de836bf303]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17ba0f)[0x76de836b8a0f]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(PyEval_EvalCodeEx+0x3e)[0x76de836b94ce]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(PyEval_EvalCode+0x1b)[0x76de836ba24b]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x18855d)[0x76de836c555d]
 --- END LIBC BACKTRACE ---
