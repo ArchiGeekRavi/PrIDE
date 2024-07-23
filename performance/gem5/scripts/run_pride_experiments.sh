@@ -5,7 +5,7 @@
 ######----------------------------------------------------- ######
 
 ## Set the paths
-source env.sh;
+# source env.sh;
 
 ## Eror Checking
 if [ -z ${MAX_GEM5_PARALLEL_RUNS+x} ];
@@ -58,11 +58,16 @@ fi
 
 config="${defense_name}${rfm}.BR${br}.4C"
 # for bmk in mix2 mix17 \
+#  for bmk in  \
+#      gcc bwaves mcf cactuBSSN namd povray lbm wrf \
+#      x264 blender deepsjeng imagick leela nab exchange2 roms xz parest \
+#      mix1 mix2 mix3 mix4 mix5 mix6 mix7 mix8 mix9 mix10 \
+#      mix11 mix12 mix13 mix14 mix15 mix16 mix17 \
   for bmk in  \
-      gcc bwaves mcf cactuBSSN namd povray lbm wrf \
-      x264 blender deepsjeng imagick leela nab exchange2 roms xz parest \
-      mix1 mix2 mix3 mix4 mix5 mix6 mix7 mix8 mix9 mix10 \
-      mix11 mix12 mix13 mix14 mix15 mix16 mix17 \
+      bwaves mcf cactuBSSN namd povray lbm wrf \
+      blender deepsjeng imagick leela nab exchange2 roms xz \
+      mix1 mix3 mix4 mix6 mix7 mix10 \
+      mix11 mix12 mix13 mix15 mix19 mix20 mix21 mix22 mix24 \
 ; do 
     #************* RRS base config BEGIN *************#
     # 
@@ -85,7 +90,7 @@ config="${defense_name}${rfm}.BR${br}.4C"
 ##     #************* RRS scalability configs END *************#
 
     ## Wait for a core to be available
-    exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`
+    exp_count=`ps aux | grep -i "gem5" | grep -i "pride" | grep -v "grep" | wc -l`
 
     echo "Currently Running Experiments: $exp_count \n\n\n"
 
@@ -95,19 +100,19 @@ config="${defense_name}${rfm}.BR${br}.4C"
 	do
             echo "\tSleeping since experiments exceeded $MAX_GEM5_PARALLEL_RUNS...  Waiting for some to finish."
             sleep 300
-            exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`
+            exp_count=`ps aux | grep -i "gem5" | grep -i "pride" | grep -v "grep" | wc -l`
             echo
 	done
 #    fi
 done
 
-exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`
+exp_count=`ps aux | grep -i "gem5" | grep -i "pride" | grep -v "grep" | wc -l`
 if [ -z "$qsub" ] 
 then
     while [ $exp_count -gt 0 ]
     do
 	sleep 300
-	exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`    
+	exp_count=`ps aux | grep -i "gem5" | grep -i "pride" | grep -v "grep" | wc -l`    
     done
 fi
 
