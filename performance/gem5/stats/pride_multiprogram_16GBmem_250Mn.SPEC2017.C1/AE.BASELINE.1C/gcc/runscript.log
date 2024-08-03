@@ -1,0 +1,95 @@
+Command line:
+./runscript_pride.sh gcc AE.BASELINE.1C 1 2017
+Global frequency set at 1000000000000 ticks per second
+DRAM config: RowsPerBank: 65536, BanksPerRank: 32, RanksPerChannel: 1
+warn: Sockets disabled, not accepting gdb connections
+warn: CoherentXBar system.cpu.mmucache.mmubus has no snooping ports attached!
+warn: Checkpoints for file descriptors currently do not work.
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 20.1.0.5
+gem5 compiled Jul 12 2024 12:42:38
+gem5 started Jul 31 2024 03:21:18
+gem5 executing on a07dda8b130c, pid 225516
+command line: /home/user/PrIDE/performance/gem5/build/X86/gem5.opt --outdir=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/gcc /home/user/PrIDE/performance/gem5/configs/example/se_rq_spec_config_multicore.py --redirects /lib64=/home/utils/gcc-6.2.0/lib64 --benchmark=gcc --benchmark_stdout=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/gcc/gcc.out --benchmark_stderr=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/gcc/gcc.err --spec-version=2017 --num-cpus=1 --mem-size=16GB --mem-type=DDR5_2400_32x4 --mem-ranks=1 --mem-channels=1 --checkpoint-dir=/home/user/PrIDE/performance/gem5/cpts-DDR5/multiprogram_16GBmem_25Bn.SPEC2017.C1/gcc-1-ref-x86 --checkpoint-restore=25000000000 --at-instruction --cpu-type DerivO3CPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l3_size=4MB --l1d_assoc=8 --l1i_assoc=8 --l2_assoc=16 --l3_assoc=16 --cpu-clock=3GHz --sys-clock=3GHz --maxinsts=250000000 --prog-interval=300Hz
+
+info: Standard input is not a terminal, disabling listeners.
+Benchmark- 0   gcc
+Selected benchmark
+--> gcc
+CMD: ['/opt/spec2017/benchspec/CPU/502.gcc_r/run/run_base_refrate_gem5_se-m64.0000/cpugcc_r_base.gem5_se-m64', '/opt/spec2017/benchspec/CPU/502.gcc_r/run/run_base_refrate_gem5_se-m64.0000/gcc-pp.c', '-O3', '-finline-limit=0', '-fif-conversion', '-fif-conversion2', '-o', '/opt/spec2017/benchspec/CPU/502.gcc_r/run/run_base_refrate_gem5_se-m64.0000/gcc-pp.opts-O3_-finline-limit_0_-fif-conversion_-fif-conversion2.s']
+CWD: /opt/spec2017/benchspec/CPU/502.gcc_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/gcc/gcc.out_0
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/gcc/gcc.err_0
+Workload-0: 
+['/opt/spec2017/benchspec/CPU/502.gcc_r/run/run_base_refrate_gem5_se-m64.0000/cpugcc_r_base.gem5_se-m64', '/opt/spec2017/benchspec/CPU/502.gcc_r/run/run_base_refrate_gem5_se-m64.0000/gcc-pp.c', '-O3', '-finline-limit=0', '-fif-conversion', '-fif-conversion2', '-o', '/opt/spec2017/benchspec/CPU/502.gcc_r/run/run_base_refrate_gem5_se-m64.0000/gcc-pp.opts-O3_-finline-limit_0_-fif-conversion_-fif-conversion2.s']
+defense_enable:  False  detector:  MG  mitigation:  RRS  threshold:  800
+mg_entries:  1700
+rrs_tuples:  3400 rrs_swap_delay:  2740ns rit_acc_delay:  1.25ns
+Switch at curTick count:10000
+warn: membus.master is deprecated. `master` is now called `mem_side_ports`
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+info: Entering event queue @ 18068450644485.  Starting simulation...
+warn: PowerState: Already in the requested power state, request ignored
+Switched CPUS @ tick 18068450654485
+switching cpus
+**** REAL SIMULATION ****
+info: Entering event queue @ 18068450654485.  Starting simulation...
+18071783977818: Event_93: system.switch_cpus progress event, total committed:18853074, progress insts committed: 18853074, IPC: 01.88342
+warn: MOVNTDQ: Ignoring non-temporal hint, modeling as cacheable!
+18075117311151: Event_93: system.switch_cpus progress event, total committed:34060755, progress insts committed: 15207681, IPC: 01.51925
+18078450644484: Event_93: system.switch_cpus progress event, total committed:45651663, progress insts committed: 11590908, IPC: 01.15793
+18081783977817: Event_93: system.switch_cpus progress event, total committed:51120833, progress insts committed: 5469170, IPC: 00.54637
+18085117311150: Event_93: system.switch_cpus progress event, total committed:62730506, progress insts committed: 11609673, IPC: 01.15981
+18088450644483: Event_93: system.switch_cpus progress event, total committed:71691130, progress insts committed: 8960624, IPC: 0.895166
+18091783977816: Event_93: system.switch_cpus progress event, total committed:87093076, progress insts committed: 15401946, IPC: 01.53865
+18095117311149: Event_93: system.switch_cpus progress event, total committed:102210669, progress insts committed: 15117593, IPC: 01.51025
+18098450644482: Event_93: system.switch_cpus progress event, total committed:116641469, progress insts committed: 14430800, IPC: 01.44164
+18101783977815: Event_93: system.switch_cpus progress event, total committed:130731216, progress insts committed: 14089747, IPC: 01.40757
+18105117311148: Event_93: system.switch_cpus progress event, total committed:141584533, progress insts committed: 10853317, IPC: 01.08425
+18108450644481: Event_93: system.switch_cpus progress event, total committed:144548500, progress insts committed: 2963967, IPC: 000.2961
+18111783977814: Event_93: system.switch_cpus progress event, total committed:151136135, progress insts committed: 6587635, IPC: 0.658105
+18115117311147: Event_93: system.switch_cpus progress event, total committed:156344661, progress insts committed: 5208526, IPC: 0.520332
+18118450644480: Event_93: system.switch_cpus progress event, total committed:161888428, progress insts committed: 5543767, IPC: 0.553822
+18121783977813: Event_93: system.switch_cpus progress event, total committed:171222533, progress insts committed: 9334105, IPC: 0.932477
+18125117311146: Event_93: system.switch_cpus progress event, total committed:179975749, progress insts committed: 8753216, IPC: 0.874446
+18128450644479: Event_93: system.switch_cpus progress event, total committed:188797651, progress insts committed: 8821902, IPC: 0.881308
+18131783977812: Event_93: system.switch_cpus progress event, total committed:197899657, progress insts committed: 9102006, IPC: 00.90929
+18135117311145: Event_93: system.switch_cpus progress event, total committed:206901751, progress insts committed: 9002094, IPC: 0.899309
+gem5 has encountered a segmentation fault!
+
+--- BEGIN LIBC BACKTRACE ---
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_Z15print_backtracev+0x2c)[0x600adeb195ac]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(+0xb2bf2f)[0x600adeb2bf2f]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x12980)[0x7d60948d7980]
+/lib/x86_64-linux-gnu/libgcc_s.so.1(_Unwind_Resume+0xcf)[0x7d609319bcdf]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN6X86ISA7Decoder10decodeInstENS_11ExtMachInstE+0x5d19e)[0x600adefb79be]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN6X86ISA7Decoder6decodeENS_11ExtMachInstEm+0x244)[0x600adef203b4]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN6X86ISA7Decoder6decodeERNS_7PCStateE+0x22b)[0x600adef206ab]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN12DefaultFetchI9O3CPUImplE5fetchERb+0x942)[0x600adf5b5832]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN12DefaultFetchI9O3CPUImplE4tickEv+0xd3)[0x600adf5b69f3]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN9FullO3CPUI9O3CPUImplE4tickEv+0x12b)[0x600adf59516b]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN10EventQueue10serviceOneEv+0xa5)[0x600adeb21a85]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_Z9doSimLoopP10EventQueue+0x87)[0x600adeb46b47]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_Z8simulatem+0xcba)[0x600adeb47b9a]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(+0x14aa4e1)[0x600adf4aa4e1]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(+0x888be9)[0x600ade888be9]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(PyCFunction_Call+0x96)[0x7d6094cf7736]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x76e0)[0x7d6094c68b20]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17ba0f)[0x7d6094c5fa0f]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17c0fc)[0x7d6094c600fc]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x4ec3)[0x7d6094c66303]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17a803)[0x7d6094c5e803]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17c2be)[0x7d6094c602be]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x4ec3)[0x7d6094c66303]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17ba0f)[0x7d6094c5fa0f]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17c0fc)[0x7d6094c600fc]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x4ec3)[0x7d6094c66303]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17ba0f)[0x7d6094c5fa0f]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(PyEval_EvalCodeEx+0x3e)[0x7d6094c604ce]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(PyEval_EvalCode+0x1b)[0x7d6094c6124b]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x18855d)[0x7d6094c6c55d]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyCFunction_FastCallDict+0x1bb)[0x7d6094cf753b]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17c1ec)[0x7d6094c601ec]
+--- END LIBC BACKTRACE ---

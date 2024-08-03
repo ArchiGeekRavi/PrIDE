@@ -735,6 +735,7 @@ class DDR5_2400_32x4(DRAMInterface):
     tCL = '14.16ns'
     tRP = '14.16ns'
     tRAS = '32ns'
+    #tRC = tRAS + tRP       @Ravi
 
     # RRD_S (different bank group) for 512B page is MAX(4 CK, 3.3ns)
     tRRD = '3.332ns'

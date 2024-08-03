@@ -1,0 +1,115 @@
+Command line:
+./runscript_pride.sh mix9 RFM2.BR2.4C 4 2017 --rh_defense --rh_mitigation=RFM --rh_rfm_per_trefi=2 --rh_rfm_blast_radius=2 --rh_rfm_maxacts_per_trefi=79
+Global frequency set at 1000000000000 ticks per second
+RFM details - rfm_act_threshold: 39, blast_radius: 2, delay_per_rfm: 175000 ps. sample_rate: 0.025000
+RH Defense config: RFM, Bus Delay: 0, rfms_per_trefi: 2, rfm_act_threshold: 39, blast_radius: 2,rfm_delay_per_act: 45000 ps.
+DRAM config: RowsPerBank: 65536, BanksPerRank: 32, RanksPerChannel: 1
+warn: Sockets disabled, not accepting gdb connections
+warn: CoherentXBar system.cpu0.mmucache.mmubus has no snooping ports attached!
+warn: CoherentXBar system.cpu1.mmucache.mmubus has no snooping ports attached!
+warn: CoherentXBar system.cpu2.mmucache.mmubus has no snooping ports attached!
+warn: CoherentXBar system.cpu3.mmucache.mmubus has no snooping ports attached!
+warn: Checkpoints for file descriptors currently do not work.
+warn: Checkpoints for file descriptors currently do not work.
+warn: Checkpoints for file descriptors currently do not work.
+warn: Checkpoints for file descriptors currently do not work.
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 20.1.0.5
+gem5 compiled Jul 12 2024 12:42:38
+gem5 started Aug  1 2024 17:02:13
+gem5 executing on a07dda8b130c, pid 250355
+command line: /home/user/PrIDE/performance/gem5/build/X86/gem5.opt --outdir=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/RFM2.BR2.4C/mix9 /home/user/PrIDE/performance/gem5/configs/example/se_rq_spec_config_multicore.py --redirects /lib64=/home/utils/gcc-6.2.0/lib64 --benchmark=mix9 --benchmark_stdout=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/RFM2.BR2.4C/mix9/mix9.out --benchmark_stderr=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/RFM2.BR2.4C/mix9/mix9.err --spec-version=2017 --rh_defense --rh_mitigation=RFM --rh_rfm_per_trefi=2 --rh_rfm_blast_radius=2 --rh_rfm_maxacts_per_trefi=79 --num-cpus=4 --mem-size=16GB --mem-type=DDR5_2400_32x4 --mem-ranks=1 --mem-channels=1 --checkpoint-dir=/home/user/PrIDE/performance/gem5/cpts-DDR5/multiprogram_16GBmem_25Bn.SPEC2017.C4/mix9-1-ref-x86 --checkpoint-restore=25000000000 --at-instruction --cpu-type DerivO3CPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l3_size=4MB --l1d_assoc=8 --l1i_assoc=8 --l2_assoc=16 --l3_assoc=16 --cpu-clock=3GHz --sys-clock=3GHz --maxinsts=250000000 --prog-interval=300Hz
+
+info: Standard input is not a terminal, disabling listeners.
+Benchmark- 0   deepsjeng
+Selected benchmark
+--> deepsjeng
+CMD: ['/opt/spec2017/benchspec/CPU/531.deepsjeng_r/run/run_base_refrate_gem5_se-m64.0000/deepsjeng_r_base.gem5_se-m64', '/opt/spec2017/benchspec/CPU/531.deepsjeng_r/run/run_base_refrate_gem5_se-m64.0000/ref.txt']
+CWD: /opt/spec2017/benchspec/CPU/531.deepsjeng_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/RFM2.BR2.4C/mix9/mix9.out_0
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/RFM2.BR2.4C/mix9/mix9.err_0
+Benchmark- 1   blender
+Selected benchmark
+--> blender
+CMD: ['/opt/spec2017/benchspec/CPU/526.blender_r/run/run_base_refrate_gem5_se-m64.0000/blender_r_base.gem5_se-m64', '/opt/spec2017/benchspec/CPU/526.blender_r/run/run_base_refrate_gem5_se-m64.0000/sh3_no_char.blend', '--render-output', 'sh3_no_char_', '--threads', '1', '-b', '-F', 'RAWTGA', '-s', '849', '-e', '849', '-a']
+CWD: /opt/spec2017/benchspec/CPU/526.blender_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/RFM2.BR2.4C/mix9/mix9.out_1
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/RFM2.BR2.4C/mix9/mix9.err_1
+Benchmark- 2   gcc
+Selected benchmark
+--> gcc
+CMD: ['/opt/spec2017/benchspec/CPU/502.gcc_r/run/run_base_refrate_gem5_se-m64.0000/cpugcc_r_base.gem5_se-m64', '/opt/spec2017/benchspec/CPU/502.gcc_r/run/run_base_refrate_gem5_se-m64.0000/gcc-pp.c', '-O3', '-finline-limit=0', '-fif-conversion', '-fif-conversion2', '-o', '/opt/spec2017/benchspec/CPU/502.gcc_r/run/run_base_refrate_gem5_se-m64.0000/gcc-pp.opts-O3_-finline-limit_0_-fif-conversion_-fif-conversion2.s']
+CWD: /opt/spec2017/benchspec/CPU/502.gcc_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/RFM2.BR2.4C/mix9/mix9.out_2
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/RFM2.BR2.4C/mix9/mix9.err_2
+Benchmark- 3   wrf
+Selected benchmark
+--> wrf
+CMD: ['/opt/spec2017/benchspec/CPU/521.wrf_r/run/run_base_refrate_gem5_se-m64.0000/wrf_r_base.gem5_se-m64']
+CWD: /opt/spec2017/benchspec/CPU/521.wrf_r/run/run_base_refrate_gem5_se-m64.0000/
+Process stdout file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/RFM2.BR2.4C/mix9/mix9.out_3
+Process stderr file: /home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C4/RFM2.BR2.4C/mix9/mix9.err_3
+Workload-0: 
+['/opt/spec2017/benchspec/CPU/531.deepsjeng_r/run/run_base_refrate_gem5_se-m64.0000/deepsjeng_r_base.gem5_se-m64', '/opt/spec2017/benchspec/CPU/531.deepsjeng_r/run/run_base_refrate_gem5_se-m64.0000/ref.txt']
+Workload-1: 
+['/opt/spec2017/benchspec/CPU/526.blender_r/run/run_base_refrate_gem5_se-m64.0000/blender_r_base.gem5_se-m64', '/opt/spec2017/benchspec/CPU/526.blender_r/run/run_base_refrate_gem5_se-m64.0000/sh3_no_char.blend', '--render-output', 'sh3_no_char_', '--threads', '1', '-b', '-F', 'RAWTGA', '-s', '849', '-e', '849', '-a']
+Workload-2: 
+['/opt/spec2017/benchspec/CPU/502.gcc_r/run/run_base_refrate_gem5_se-m64.0000/cpugcc_r_base.gem5_se-m64', '/opt/spec2017/benchspec/CPU/502.gcc_r/run/run_base_refrate_gem5_se-m64.0000/gcc-pp.c', '-O3', '-finline-limit=0', '-fif-conversion', '-fif-conversion2', '-o', '/opt/spec2017/benchspec/CPU/502.gcc_r/run/run_base_refrate_gem5_se-m64.0000/gcc-pp.opts-O3_-finline-limit_0_-fif-conversion_-fif-conversion2.s']
+Workload-3: 
+['/opt/spec2017/benchspec/CPU/521.wrf_r/run/run_base_refrate_gem5_se-m64.0000/wrf_r_base.gem5_se-m64']
+defense_enable:  True  detector:  MG  mitigation:  RFM  threshold:  800
+mg_entries:  1700
+rfm_maxacts_per_trefi:  79 rfm_per_trefi:  2 rfm_blast_radius:  2
+Switch at curTick count:10000
+warn: membus.master is deprecated. `master` is now called `mem_side_ports`
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+info: Entering event queue @ 16546382661060.  Starting simulation...
+info: Entering event queue @ 16546382671060.  Starting simulation...
+warn: PowerState: Already in the requested power state, request ignored
+Switched CPUS @ tick 16546382671060
+switching cpus
+**** REAL SIMULATION ****
+info: Entering event queue @ 16546382671716.  Starting simulation...
+warn: MOVNTDQ: Ignoring non-temporal hint, modeling as cacheable!
+16549715994393: Event_285: system.switch_cpus3 progress event, total committed:30385496, progress insts committed: 30385496, IPC: 03.03551
+16549715994393: Event_284: system.switch_cpus2 progress event, total committed:10514973, progress insts committed: 10514973, IPC: 01.05045
+16549715994393: Event_283: system.switch_cpus1 progress event, total committed:24225429, progress insts committed: 24225429, IPC: 02.42012
+16549715994393: Event_282: system.switch_cpus0 progress event, total committed:22147937, progress insts committed: 22147937, IPC: 02.21258
+gem5 has encountered a segmentation fault!
+
+--- BEGIN LIBC BACKTRACE ---
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_Z15print_backtracev+0x2c)[0x5effbc7195ac]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(+0xb2bf2f)[0x5effbc72bf2f]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x12980)[0x79bf4c8d0980]
+/lib/x86_64-linux-gnu/libgcc_s.so.1(_Unwind_Resume+0xcf)[0x79bf4b194cdf]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN6X86ISA7Decoder10decodeInstENS_11ExtMachInstE+0x5d19e)[0x5effbcbb79be]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN6X86ISA7Decoder6decodeENS_11ExtMachInstEm+0x244)[0x5effbcb203b4]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN6X86ISA7Decoder6decodeERNS_7PCStateE+0x22b)[0x5effbcb206ab]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN12DefaultFetchI9O3CPUImplE5fetchERb+0x942)[0x5effbd1b5832]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN12DefaultFetchI9O3CPUImplE4tickEv+0xd3)[0x5effbd1b69f3]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN9FullO3CPUI9O3CPUImplE4tickEv+0x12b)[0x5effbd19516b]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_ZN10EventQueue10serviceOneEv+0xa5)[0x5effbc721a85]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_Z9doSimLoopP10EventQueue+0x87)[0x5effbc746b47]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(_Z8simulatem+0xcba)[0x5effbc747b9a]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(+0x14aa4e1)[0x5effbd0aa4e1]
+/home/user/PrIDE/performance/gem5/build/X86/gem5.opt(+0x888be9)[0x5effbc488be9]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(PyCFunction_Call+0x96)[0x79bf4ccf0736]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x76e0)[0x79bf4cc61b20]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17ba0f)[0x79bf4cc58a0f]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17c0fc)[0x79bf4cc590fc]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x4ec3)[0x79bf4cc5f303]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17a803)[0x79bf4cc57803]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17c2be)[0x79bf4cc592be]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x4ec3)[0x79bf4cc5f303]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17ba0f)[0x79bf4cc58a0f]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17c0fc)[0x79bf4cc590fc]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyEval_EvalFrameDefault+0x4ec3)[0x79bf4cc5f303]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17ba0f)[0x79bf4cc58a0f]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(PyEval_EvalCodeEx+0x3e)[0x79bf4cc594ce]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(PyEval_EvalCode+0x1b)[0x79bf4cc5a24b]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x18855d)[0x79bf4cc6555d]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(_PyCFunction_FastCallDict+0x1bb)[0x79bf4ccf053b]
+/usr/lib/x86_64-linux-gnu/libpython3.6m.so.1.0(+0x17c1ec)[0x79bf4cc591ec]
+--- END LIBC BACKTRACE ---
