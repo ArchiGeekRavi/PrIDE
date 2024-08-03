@@ -1,0 +1,119 @@
+echo "Compiling Analytical Model"; cd analytical; make; ./loss_probability_analytical > output/output.txt; cat output/output.txt; cd -
+Compiling Analytical Model
+make[1]: Entering directory '/home/ravi/PrIDE/security/0_loss_probability/analytical'
+g++ -o loss_probability_analytical loss_probability_analytical.cpp
+make[1]: Leaving directory '/home/ravi/PrIDE/security/0_loss_probability/analytical'
+
+***********Printing Table-III***********
+
+***** LossProbability for Window-Size: 79 ******
+Capacity: 1	LossProb: 0.6298 	 TRH*(TIF+TRF):  8287 
+Capacity: 2	LossProb: 0.3048 	 TRH*(TIF+TRF):  4404 
+Capacity: 4	LossProb: 0.1192 	 TRH*(TIF+TRF):  3472 
+Capacity: 8	LossProb: 0.0601 	 TRH*(TIF+TRF):  3252 
+Capacity: 16	LossProb: 0.0304 	 TRH*(TIF+TRF):  3152 
+
+/home/ravi/PrIDE/security/0_loss_probability
+echo ""
+
+echo "Compiling Monte Carlo Model"; cd monte_carlo; make;  ./sim > output/output.txt; cat output/output.txt; cd -
+Compiling Monte Carlo Model
+make[1]: Entering directory '/home/ravi/PrIDE/security/0_loss_probability/monte_carlo'
+g++ -lz -O3 -lm  -W -Wall -Wno-deprecated -Wno-unused-parameter -Wno-unused-but-set-variable tracker.cpp sim.cpp  -o ./sim
+In file included from tracker.h:5:0,
+                 from tracker.cpp:4:
+mtrand.h: In member function ‘void MTRand::seed(MTRand::uint32*, MTRand::uint32)’:
+mtrand.h:218:36: warning: enumeral and non-enumeral type in conditional expression [-Wextra]
+  register int k = ( N > seedLength ? N : seedLength );
+                     ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+In file included from sim.cpp:5:0:
+mtrand.h: In member function ‘void MTRand::seed(MTRand::uint32*, MTRand::uint32)’:
+mtrand.h:218:36: warning: enumeral and non-enumeral type in conditional expression [-Wextra]
+  register int k = ( N > seedLength ? N : seedLength );
+                     ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+make[1]: Leaving directory '/home/ravi/PrIDE/security/0_loss_probability/monte_carlo'
+***** LossProbability for Window-Size: 79 ******
+Capacity: 1	LossProb: 0.6298
+Capacity: 2	LossProb: 0.3011
+Capacity: 4	LossProb: 0.1181
+Capacity: 8	LossProb: 0.0601
+Capacity: 16	LossProb: 0.0306
+
+
+/home/ravi/PrIDE/security/0_loss_probability
+echo ""
+
+~/PrIDE/security
+~/PrIDE/security
+g++ -o sim-reliability sim-reliability.cpp
+./sim-reliability
+
+
+***********Printing Data for Fig-9***********
+Bufsize: 1	 TRH_STAR(NoTardy): 8288	 TRH_STAR(Tardy): 8366
+Bufsize: 2	 TRH_STAR(NoTardy): 4404	 TRH_STAR(Tardy): 4561
+Bufsize: 3	 TRH_STAR(NoTardy): 3678	 TRH_STAR(Tardy): 3914
+Bufsize: 4	 TRH_STAR(NoTardy): 3472	 TRH_STAR(Tardy): 3787
+Bufsize: 5	 TRH_STAR(NoTardy): 3379	 TRH_STAR(Tardy): 3773
+Bufsize: 6	 TRH_STAR(NoTardy): 3322	 TRH_STAR(Tardy): 3795
+Bufsize: 7	 TRH_STAR(NoTardy): 3282	 TRH_STAR(Tardy): 3834
+Bufsize: 8	 TRH_STAR(NoTardy): 3252	 TRH_STAR(Tardy): 3883
+Bufsize: 9	 TRH_STAR(NoTardy): 3230	 TRH_STAR(Tardy): 3940
+Bufsize: 10	 TRH_STAR(NoTardy): 3212	 TRH_STAR(Tardy): 4001
+Bufsize: 11	 TRH_STAR(NoTardy): 3197	 TRH_STAR(Tardy): 4065
+Bufsize: 12	 TRH_STAR(NoTardy): 3185	 TRH_STAR(Tardy): 4132
+Bufsize: 13	 TRH_STAR(NoTardy): 3175	 TRH_STAR(Tardy): 4201
+Bufsize: 14	 TRH_STAR(NoTardy): 3166	 TRH_STAR(Tardy): 4271
+Bufsize: 15	 TRH_STAR(NoTardy): 3159	 TRH_STAR(Tardy): 4343
+Bufsize: 16	 TRH_STAR(NoTardy): 3152	 TRH_STAR(Tardy): 4415
+
+
+***********Printing Table-IV***********
+PARA-DRFM        	TRH_STAR: 16963	 
+PARA-DRFM+        	TRH_STAR: 8471	 
+PRIDE             	TRH_STAR: 3831	 
+
+
+
+
+***********Printing Table-V***********
+PRIDE (0.5x)        	TRH_STAR-S: 7514
+PRIDE        	TRH_STAR-S: 3831
+PRIDE+RFM40  	TRH_STAR-S: 1981
+PRIDE+RFM16  	TRH_STAR-S: 822
+
+
+
+
+***********Printing Table-VI***********
+PRIDE        	TRH_STAR-S: 3831	 TRH_STAR-D: 1915
+PRIDE+RFM40  	TRH_STAR-S: 1981	 TRH_STAR-D: 990
+PRIDE+RFM16  	TRH_STAR-S: 822 	 TRH_STAR-D: 411
+
+
+
+
+***********Printing Table-VIII***********
+100 Years	4.55 Years	 TRH_STAR-S: 3415	 TRH_STAR-D: 1707
+1000 Years	45.45 Years	 TRH_STAR-S: 3623	 TRH_STAR-D: 1811
+10000 Years	454.55 Years	 TRH_STAR-S: 3831	 TRH_STAR-D: 1915
+100000 Years	4545.45 Years	 TRH_STAR-S: 4039	 TRH_STAR-D: 2019
+1000000 Years	45454.55 Years	 TRH_STAR-S: 4247	 TRH_STAR-D: 2123
+
+
+
+
+***********Printing Table-IX***********
+TRDH-D: 4800	>1 mil_years	>1 mil_years	>1 mil_years
+TRDH-D: 2000	2936 years	>1 mil_years	>1 mil_years
+TRDH-D: 1800	36 years	>1 mil_years	>1 mil_years
+TRDH-D: 1600	153 days	>1 mil_years	>1 mil_years
+TRDH-D: 1400	2 days	>1 mil_years	>1 mil_years
+TRDH-D: 1200	32 min	>1 mil_years	>1 mil_years
+TRDH-D: 1000	23 sec	674 years	>1 mil_years
+TRDH-D: 800	<1 sec	42 days	>1 mil_years
+TRDH-D: 600	<1 sec	10 min	>1 mil_years
+TRDH-D: 400	<1 sec	<1 sec	140 years
+TRDH-D: 200	<1 sec	<1 sec	3 sec
+
+
