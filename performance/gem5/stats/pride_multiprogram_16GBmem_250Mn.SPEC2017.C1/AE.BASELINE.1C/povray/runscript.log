@@ -10,9 +10,9 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 20.1.0.5
 gem5 compiled Jul 12 2024 12:42:38
-gem5 started Jul 17 2024 12:51:59
-gem5 executing on a07dda8b130c, pid 86598
-command line: /home/user/PrIDE/performance/gem5/build/X86/gem5.opt --outdir=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/povray /home/user/PrIDE/performance/gem5/configs/example/se_rq_spec_config_multicore.py --redirects /lib64=/home/utils/gcc-6.2.0/lib64 --benchmark=povray --benchmark_stdout=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/povray/povray.out --benchmark_stderr=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/povray/povray.err --spec-version=2017 --num-cpus=1 --mem-size=16GB --mem-type=DDR5_2400_32x4 --mem-ranks=1 --checkpoint-dir=/home/user/PrIDE/performance/gem5/cpts/multiprogram_16GBmem_25Bn.SPEC2017.C1/povray-1-ref-x86 --checkpoint-restore=25000000000 --at-instruction --cpu-type DerivO3CPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l1d_assoc=8 --l1i_assoc=8 --l2_assoc=16 --maxinsts=250000000 --prog-interval=300Hz
+gem5 started Jul 31 2024 03:21:18
+gem5 executing on a07dda8b130c, pid 225551
+command line: /home/user/PrIDE/performance/gem5/build/X86/gem5.opt --outdir=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/povray /home/user/PrIDE/performance/gem5/configs/example/se_rq_spec_config_multicore.py --redirects /lib64=/home/utils/gcc-6.2.0/lib64 --benchmark=povray --benchmark_stdout=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/povray/povray.out --benchmark_stderr=/home/user/PrIDE/performance/gem5/stats/pride_multiprogram_16GBmem_250Mn.SPEC2017.C1/AE.BASELINE.1C/povray/povray.err --spec-version=2017 --num-cpus=1 --mem-size=16GB --mem-type=DDR5_2400_32x4 --mem-ranks=1 --mem-channels=1 --checkpoint-dir=/home/user/PrIDE/performance/gem5/cpts-DDR5/multiprogram_16GBmem_25Bn.SPEC2017.C1/povray-1-ref-x86 --checkpoint-restore=25000000000 --at-instruction --cpu-type DerivO3CPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l3_size=4MB --l1d_assoc=8 --l1i_assoc=8 --l2_assoc=16 --l3_assoc=16 --cpu-clock=3GHz --sys-clock=3GHz --maxinsts=250000000 --prog-interval=300Hz
 
 info: Standard input is not a terminal, disabling listeners.
 Benchmark- 0   povray
@@ -30,20 +30,20 @@ rrs_tuples:  3400 rrs_swap_delay:  2740ns rit_acc_delay:  1.25ns
 Switch at curTick count:10000
 warn: membus.master is deprecated. `master` is now called `mem_side_ports`
 warn: No dot file generated. Please install pydot to generate the dot file and pdf.
-info: Entering event queue @ 17895005562186.  Starting simulation...
-info: Entering event queue @ 17895005572186.  Starting simulation...
+info: Entering event queue @ 17895005580168.  Starting simulation...
+info: Entering event queue @ 17895005590168.  Starting simulation...
 warn: PowerState: Already in the requested power state, request ignored
-Switched CPUS @ tick 17895005572186
+Switched CPUS @ tick 17895005590168
 switching cpus
 **** REAL SIMULATION ****
-info: Entering event queue @ 17895005572509.  Starting simulation...
-17898338895519: Event_93: system.switch_cpus progress event, total committed:44567449, progress insts committed: 44567449, IPC: 04.45229
-17901672228852: Event_93: system.switch_cpus progress event, total committed:89932849, progress insts committed: 45365400, IPC: 0004.532
-17905005562185: Event_93: system.switch_cpus progress event, total committed:135434844, progress insts committed: 45501995, IPC: 04.54565
-17908338895518: Event_93: system.switch_cpus progress event, total committed:180902619, progress insts committed: 45467775, IPC: 04.54223
-17911672228851: Event_93: system.switch_cpus progress event, total committed:226568833, progress insts committed: 45666214, IPC: 04.56205
-17915005562184: Event_93: system.switch_cpus progress event, total committed:272269853, progress insts committed: 45701020, IPC: 04.56553
-17918338895517: Event_93: system.switch_cpus progress event, total committed:318039609, progress insts committed: 45769756, IPC: 004.5724
-17921672228850: Event_93: system.switch_cpus progress event, total committed:363091751, progress insts committed: 45052142, IPC: 04.50071
-17925005562183: Event_93: system.switch_cpus progress event, total committed:408195394, progress insts committed: 45103643, IPC: 04.50585
-Exiting @ tick 17928127275651 because a thread reached the max instruction count
+info: Entering event queue @ 17895005590824.  Starting simulation...
+17898338913501: Event_93: system.switch_cpus progress event, total committed:44561159, progress insts committed: 44561159, IPC: 04.45166
+17901672246834: Event_93: system.switch_cpus progress event, total committed:89933293, progress insts committed: 45372134, IPC: 04.53268
+17905005580167: Event_93: system.switch_cpus progress event, total committed:135432199, progress insts committed: 45498906, IPC: 04.54534
+17908338913500: Event_93: system.switch_cpus progress event, total committed:180897177, progress insts committed: 45464978, IPC: 04.54195
+17911672246833: Event_93: system.switch_cpus progress event, total committed:226553494, progress insts committed: 45656317, IPC: 04.56107
+17915005580166: Event_93: system.switch_cpus progress event, total committed:272246948, progress insts committed: 45693454, IPC: 04.56478
+17918338913499: Event_93: system.switch_cpus progress event, total committed:318013418, progress insts committed: 45766470, IPC: 04.57207
+17921672246832: Event_93: system.switch_cpus progress event, total committed:363062506, progress insts committed: 45049088, IPC: 004.5004
+17925005580165: Event_93: system.switch_cpus progress event, total committed:408163704, progress insts committed: 45101198, IPC: 04.50561
+Exiting @ tick 17928130429161 because a thread reached the max instruction count

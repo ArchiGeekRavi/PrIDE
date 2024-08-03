@@ -18,6 +18,11 @@ fi
 #RUN CONFIG
 CHECKPOINT_CONFIG="multiprogram_16GBmem_25Bn"
 INST_TAKE_CHECKPOINT=25000000000
+#CHECKPOINT_CONFIG="multiprogram_16GBmem_50Mn"
+#CHECKPOINT_CONFIG="multiprogram_32GBmem_50Mn"
+#INST_TAKE_CHECKPOINT=50000000
+#CHECKPOINT_CONFIG="multiprogram_32GBmem_25Bn"
+#INST_TAKE_CHECKPOINT=25000000000
 
 MAX_INSTS=$((INST_TAKE_CHECKPOINT + 1)) #simulate till checkpoint instruction
 
@@ -91,6 +96,42 @@ echo "--------- Here goes nothing! Starting gem5! ------------" | tee -a $SCRIPT
 echo "" | tee -a $SCRIPT_OUT
 echo "" | tee -a $SCRIPT_OUT
 
+## Launch Gem5:
+#$GEM5_PATH/build/X86/gem5.opt \
+#    --outdir=$OUTPUT_DIR \
+#    $GEM5_PATH/configs/example/se_rq_spec_config_multicore.py \
+#    --redirects /lib64=/home/utils/gcc-6.2.0/lib64 \
+#    --benchmark=$BENCHMARK \
+#    --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out \
+#    --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err \
+#    --spec-version=$SPEC_VERSION \
+#    --num-cpus=$NUM_CORES --mem-size=16GB --mem-type=DDR4_2400_16x4 --mem-ranks=1 \
+#    --checkpoint-dir=$CKPT_OUT_DIR \
+#    --take-checkpoint=$INST_TAKE_CHECKPOINT --at-instruction \
+#    --maxinsts=$MAX_INSTS \
+#    --prog-interval=300Hz \
+#    >> $SCRIPT_OUT 2>&1 &
+#
+##     --mem-type=SimpleMemory \
+
+echo "$GEM5_PATH/build/X86/gem5.opt \
+     --outdir=$OUTPUT_DIR \
+     $GEM5_PATH/configs/example/se_rq_spec_config_multicore.py \
+     --redirects /lib64=/home/utils/gcc-6.2.0/lib64 \
+     --benchmark=$BENCHMARK \
+     --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out \
+     --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err \
+     --spec-version=$SPEC_VERSION ${RH_DEFENSE_PARAMS} \
+     --num-cpus=$NUM_CORES --mem-size=16GB --mem-type=DDR5_2400_32x4 --mem-ranks=1 --mem-channels=1 \
+     --checkpoint-dir=$CKPT_OUT_DIR \
+     --checkpoint-restore=$INST_TAKE_CHECKPOINT --at-instruction \
+     --caches --l2cache \
+     --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l3_size=4MB \
+     --l1d_assoc=8  --l1i_assoc=8 --l2_assoc=16 --l3_assoc=16 \
+     --cpu-clock=3GHz --sys-clock=3GHz \
+     --maxinsts=$MAX_INSTS \
+     --prog-interval=300Hz"
+
 # Launch Gem5:
 $GEM5_PATH/build/X86/gem5.opt \
     --outdir=$OUTPUT_DIR \
@@ -100,11 +141,19 @@ $GEM5_PATH/build/X86/gem5.opt \
     --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out \
     --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err \
     --spec-version=$SPEC_VERSION \
-    --num-cpus=$NUM_CORES --mem-size=16GB --mem-type=DDR4_2400_16x4 --mem-ranks=1 \
+    --num-cpus=$NUM_CORES --mem-size=16GB --mem-type=DDR5_2400_32x4 --mem-ranks=1 --mem-channels=1 \
     --checkpoint-dir=$CKPT_OUT_DIR \
     --take-checkpoint=$INST_TAKE_CHECKPOINT --at-instruction \
+    --caches --l2cache \
+    --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l3_size=4MB \
+    --l1d_assoc=8  --l1i_assoc=8 --l2_assoc=16 --l3_assoc=16 \
+    --cpu-clock=3GHz --sys-clock=3GHz \
     --maxinsts=$MAX_INSTS \
     --prog-interval=300Hz \
     >> $SCRIPT_OUT 2>&1 &
 
 #     --mem-type=SimpleMemory \
+    #--num-cpus=$NUM_CORES --mem-size=16GB --mem-type=DDR4_2400_16x4 --mem-ranks=1 \
+    #--cpu-type DerivO3CPU \
+    #--cpu-type=DerivO3CPU \
+    # --l3cache is not there  no option

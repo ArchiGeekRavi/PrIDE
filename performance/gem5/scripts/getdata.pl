@@ -296,17 +296,31 @@ sub process_stats{
     
   }
   
-  if($norm_dir != -1){
-    
-    for($ii=0; $ii< $num_w; $ii++){
-      $norm_val = $data[$norm_dir][$ii];
-      for($dirnum=0; $dirnum<@dirs; $dirnum++){
-	  $data[$dirnum][$ii] /= $norm_val;   
-      }
-    }
-    
-  }
+  #if($norm_dir != -1){
+  #  
+  #  for($ii=0; $ii< $num_w; $ii++){
+  #    $norm_val = $data[$norm_dir][$ii];
+  #    for($dirnum=0; $dirnum<@dirs; $dirnum++){
+  #        $data[$dirnum][$ii] /= $norm_val;   
+  #    }
+  #  }
+  #  
+  #}
 
+  # @Ravi ................
+  if ($norm_dir != -1) {
+    for ($ii = 0; $ii < $num_w; $ii++) {
+        $norm_val = $data[$norm_dir][$ii];
+        if ($norm_val != 0) { # Check if norm_val is not zero
+            for ($dirnum = 0; $dirnum < @dirs; $dirnum++) {
+                $data[$dirnum][$ii] /= $norm_val;
+            }
+        } else {
+            warn "Warning: norm_val is zero at index $ii. Skipping division for this index.\n";
+        }
+    }
+}
+#..........................
 
   if($print_max){
     
