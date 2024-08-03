@@ -32,32 +32,31 @@ fi
 
 
  # baseline single-core SPEC17 workloads
- #for bmk in bwaves mcf cactuBSSN namd povray lbm wrf\
- #  blender deepsjeng imagick leela nab exchange2 roms xz; do 
- #   if [ $qsub -gt 0 ] 
- #   then
-#	echo "./runscript_pride.sh $bmk AE.BASELINE.1C 1 2017" >> $qsub_cmdfile;
-#    else
-#     ./runscript_pride.sh $bmk AE.BASELINE.1C 1 2017; 
-#    fi
-# done
+for bmk in gcc bwaves mcf cactuBSSN namd povray lbm wrf\
+ blender deepsjeng imagick leela nab exchange2 roms xz; do 
+  if [ $qsub -gt 0 ] 
+  then
+	  echo "./runscript_pride.sh $bmk AE.BASELINE.1C 1 2017" >> $qsub_cmdfile;
+  else
+	  ./runscript_pride.sh $bmk AE.BASELINE.1C 1 2017; 
+  fi
+ done
  
 # baseline multi-core SPEC17 workloads
  ## for bmk in mix2 mix17 \
+for bmk in gcc bwaves mcf cactuBSSN namd povray lbm wrf \
+ blender deepsjeng imagick leela nab exchange2 roms xz \
+ mix1 mix3 mix4 mix6 mix7 mix9 mix10 \
+ mix11 mix12 mix13 mix14 mix15 mix16 mix17; do 
+ #mix11 mix12 mix13 mix14 mix15 mix16 mix17 mix19 mix21 mix22 mix24 \
 #for bmk in \
-#    bwaves mcf cactuBSSN namd povray lbm wrf \
-#    blender deepsjeng imagick leela nab exchange2 roms xz \
-#    mix1 mix3 mix4 mix6 mix7 mix10 \
-#  mix11 mix12 mix13 mix15 mix19 mix21 mix22 mix24 \
-#    ; do 
-for bmk in \
-    mix20  ; do 
-    if [ $qsub -gt 0 ] 
-    then
+#    mix20  ; do 
+ if [ $qsub -gt 0 ] 
+ then
 	echo "./runscript_pride.sh $bmk AE.BASELINE.4C 4 2017" >> $qsub_cmdfile;
-    else 
+ else 
 	./runscript_pride.sh $bmk AE.BASELINE.4C 4 2017; 
-    fi
+ fi
     ## Wait for a core to be available
     exp_count=`ps aux | grep -i "gem5" | grep -i "pride" | grep -v "grep" | wc -l`
 

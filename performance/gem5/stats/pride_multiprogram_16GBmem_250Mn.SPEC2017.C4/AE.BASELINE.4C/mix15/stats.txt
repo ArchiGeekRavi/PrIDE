@@ -1,11 +1,11 @@
 
 ---------- Begin Simulation Statistics ----------
 final_tick                               13975637408298                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
-host_inst_rate                                 187339                       # Simulator instruction rate (inst/s)
+host_inst_rate                                 165301                       # Simulator instruction rate (inst/s)
 host_mem_usage                               17432564                       # Number of bytes of host memory used
-host_op_rate                                   239999                       # Simulator op (including micro ops) rate (op/s)
-host_seconds                                  2477.47                       # Real time elapsed on the host
-host_tick_rate                               12302425                       # Simulator tick rate (ticks/s)
+host_op_rate                                   211767                       # Simulator op (including micro ops) rate (op/s)
+host_seconds                                  2807.77                       # Real time elapsed on the host
+host_tick_rate                               10855222                       # Simulator tick rate (ticks/s)
 sim_freq                                 1000000000000                       # Frequency of simulated ticks
 sim_insts                                   464127709                       # Number of instructions simulated
 sim_ops                                     594592085                       # Number of ops (including micro ops) simulated
@@ -1695,9 +1695,9 @@ system.cpu0.mmucache.tags.power_state.pwrStateResidencyTicks::UNDEFINED 13975637
 system.cpu0.power_state.numTransitions              1                       # Number of power state transitions
 system.cpu0.power_state.pwrStateResidencyTicks::ON 13945158494055                       # Cumulative time (in ticks) in various power states
 system.cpu0.power_state.pwrStateResidencyTicks::OFF  30478914243                       # Cumulative time (in ticks) in various power states
-system.cpu0.thread32258.numInsts                    0                       # Number of Instructions committed
-system.cpu0.thread32258.numOps                      0                       # Number of Ops committed
-system.cpu0.thread32258.numMemRefs                  0                       # Number of Memory References
+system.cpu0.thread29498.numInsts                    0                       # Number of Instructions committed
+system.cpu0.thread29498.numOps                      0                       # Number of Ops committed
+system.cpu0.thread29498.numMemRefs                  0                       # Number of Memory References
 system.cpu1.dcache.demand_hits::.switch_cpus1.data     26796088                       # number of demand (read+write) hits
 system.cpu1.dcache.demand_hits::total        26796088                       # number of demand (read+write) hits
 system.cpu1.dcache.overall_hits::.switch_cpus1.data     27385469                       # number of overall hits
@@ -2199,9 +2199,9 @@ system.cpu1.mmucache.tags.power_state.pwrStateResidencyTicks::UNDEFINED 13975637
 system.cpu1.power_state.numTransitions              1                       # Number of power state transitions
 system.cpu1.power_state.pwrStateResidencyTicks::ON 13945158494055                       # Cumulative time (in ticks) in various power states
 system.cpu1.power_state.pwrStateResidencyTicks::OFF  30478914243                       # Cumulative time (in ticks) in various power states
-system.cpu1.thread16434.numInsts                    0                       # Number of Instructions committed
-system.cpu1.thread16434.numOps                      0                       # Number of Ops committed
-system.cpu1.thread16434.numMemRefs                  0                       # Number of Memory References
+system.cpu1.thread-29046.numInsts                   0                       # Number of Instructions committed
+system.cpu1.thread-29046.numOps                     0                       # Number of Ops committed
+system.cpu1.thread-29046.numMemRefs                 0                       # Number of Memory References
 system.cpu2.dcache.demand_hits::.cpu2.data            2                       # number of demand (read+write) hits
 system.cpu2.dcache.demand_hits::.switch_cpus2.data     17356692                       # number of demand (read+write) hits
 system.cpu2.dcache.demand_hits::total        17356694                       # number of demand (read+write) hits
@@ -2719,9 +2719,9 @@ system.cpu2.mmucache.tags.power_state.pwrStateResidencyTicks::UNDEFINED 13975637
 system.cpu2.power_state.numTransitions              1                       # Number of power state transitions
 system.cpu2.power_state.pwrStateResidencyTicks::ON 13945158494055                       # Cumulative time (in ticks) in various power states
 system.cpu2.power_state.pwrStateResidencyTicks::OFF  30478914243                       # Cumulative time (in ticks) in various power states
-system.cpu2.thread32258.numInsts                    0                       # Number of Instructions committed
-system.cpu2.thread32258.numOps                      0                       # Number of Ops committed
-system.cpu2.thread32258.numMemRefs                  0                       # Number of Memory References
+system.cpu2.thread29498.numInsts                    0                       # Number of Instructions committed
+system.cpu2.thread29498.numOps                      0                       # Number of Ops committed
+system.cpu2.thread29498.numMemRefs                  0                       # Number of Memory References
 system.cpu3.dcache.demand_hits::.cpu3.data            4                       # number of demand (read+write) hits
 system.cpu3.dcache.demand_hits::.switch_cpus3.data     89555682                       # number of demand (read+write) hits
 system.cpu3.dcache.demand_hits::total        89555686                       # number of demand (read+write) hits

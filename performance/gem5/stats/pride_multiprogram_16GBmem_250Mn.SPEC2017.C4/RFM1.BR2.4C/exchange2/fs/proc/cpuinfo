@@ -4,7 +4,7 @@ cpu family      : 0
 model           : 0
 model name      : Generic
 stepping        : 0
-cpu MHz         : 2000.000
+cpu MHz         : 3000.000
 cache size:     : 256.0K
 physical id     : 0
 siblings        : 4
@@ -23,7 +23,7 @@ cpu family      : 0
 model           : 0
 model name      : Generic
 stepping        : 0
-cpu MHz         : 2000.000
+cpu MHz         : 3000.000
 cache size:     : 256.0K
 physical id     : 0
 siblings        : 4
@@ -42,7 +42,7 @@ cpu family      : 0
 model           : 0
 model name      : Generic
 stepping        : 0
-cpu MHz         : 2000.000
+cpu MHz         : 3000.000
 cache size:     : 256.0K
 physical id     : 0
 siblings        : 4
@@ -61,7 +61,7 @@ cpu family      : 0
 model           : 0
 model name      : Generic
 stepping        : 0
-cpu MHz         : 2000.000
+cpu MHz         : 3000.000
 cache size:     : 256.0K
 physical id     : 0
 siblings        : 4

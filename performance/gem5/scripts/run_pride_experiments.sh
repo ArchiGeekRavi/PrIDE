@@ -64,10 +64,10 @@ config="${defense_name}${rfm}.BR${br}.4C"
 #      mix1 mix2 mix3 mix4 mix5 mix6 mix7 mix8 mix9 mix10 \
 #      mix11 mix12 mix13 mix14 mix15 mix16 mix17 \
   for bmk in  \
-      bwaves mcf cactuBSSN namd povray lbm wrf \
+      bwaves mcf gcc cactuBSSN namd povray lbm wrf \
       blender deepsjeng imagick leela nab exchange2 roms xz \
-      mix1 mix3 mix4 mix6 mix7 mix10 \
-      mix11 mix12 mix13 mix15 mix19 mix20 mix21 mix22 mix24 \
+      mix1 mix3 mix4 mix6 mix7 mix9 mix10 \
+      mix11 mix12 mix13 mix14 mix15 mix16 mix17 \
 ; do 
     #************* RRS base config BEGIN *************#
     # 
