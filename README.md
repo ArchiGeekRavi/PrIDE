@@ -121,6 +121,7 @@ cd security                                        # Change into the `security` 
 #### @Ravi Notes:
 
 * **Checkpoint Folder:** The checkpoint folder can be accessed at the following URL:
-  * [Checkpoint Folder (cpts)](https://iitbacin-my.sharepoint.com/:f:/g/personal/ravichoubey_iitb_ac_in/EjkQu5ZR_BNNhq2vtJ02YWAB7KQ2kDp7otR3tnJxNfreVA?e=2FrbXb)
+  * [Checkpoint Folder (cpts) DDR4](https://iitbacin-my.sharepoint.com/:f:/g/personal/ravichoubey_iitb_ac_in/EjkQu5ZR_BNNhq2vtJ02YWAB7KQ2kDp7otR3tnJxNfreVA?e=Y7ebR6)
+  * [Checkpoint Folder (cpts) DDR5](https://iitbacin-my.sharepoint.com/:f:/g/personal/ravichoubey_iitb_ac_in/EjL6-vAzs7VFghqipTXcejEB62i2muLrU_nhRf6rISyiMQ?e=45sSYt)
   * [Performance Graph (Fig 9) of rfm.perf.pride.br1 and rfm.perf.isca.br2](https://docs.google.com/spreadsheets/d/1RikvOT1o3JCZsN7Dqr1qd2JvAyDk4F_MXVWHfOW6wu4/edit?usp=sharing)
 
